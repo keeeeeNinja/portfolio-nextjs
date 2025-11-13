@@ -9,6 +9,7 @@ https://zenn.dev/gmomedia/articles/github-mcp-setup-guide
 
 Docker入れないで、トークンの設定たけです。
 
+
 ・Context7 for Claude Code
 次のGitHubリポジトリのREADMEを必ず開いて内容を読んでください：
 https://github.com/upstash/context7#readme
