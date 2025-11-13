@@ -17,7 +17,8 @@
       "Bash(git push:*)",
       "Bash(git rm:*)",
       "Bash(git reset:*)",
-      "Read(//Users/keeee/Library/CloudStorage/GoogleDrive-allfork2011@gmail.com/マイドライブ/人生プロジェクト/portfolio_20251112/**)"
+      "Read(//Users/keeee/Library/CloudStorage/GoogleDrive-allfork2011@gmail.com/マイドライブ/人生プロジェクト/portfolio_20251112/**)",
+      "Bash(npx:*)"
     ],
     "deny": [],
     "ask": []
