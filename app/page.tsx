@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white/40 to-white/0 px-[50px]">
+    <div className="min-h-screen bg-gradient-to-b from-white/40 to-white/0 px-[50px] max-w-[1280px] mx-auto">
       <Navigation />
 
       {/* Hero Section */}
