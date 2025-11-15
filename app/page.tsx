@@ -1,47 +1,11 @@
 import Image from "next/image";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white/40 to-white/0 px-[50px]">
-      <nav className="flex flex-col items-start justify-between gap-5 -mx-[50px] px-5 pt-5 pb-[60px] border-b border-[#4f4f4f]/30 md:flex-row md:items-center md:px-12 md:pt-[30px] md:pb-[100px] lg:px-[50px]">
-        {/* Name Section */}
-        <div className="flex items-center gap-5">
-          <div className="relative w-10 h-10 md:w-[50px] md:h-[50px] rounded-full shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
-            <Image
-              src="/portrait.png"
-              alt="Sarah Chen portrait"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
-          <h1 className="font-serif text-2xl text-black tracking-[-1.08px] leading-[1.52] whitespace-nowrap">
-            Sarah Chen
-          </h1>
-        </div>
-
-        {/* Links */}
-        <div className="flex flex-col items-end gap-[30px] text-base tracking-[-0.72px] md:flex-row md:gap-2.5 md:items-center">
-          <a
-            href="#"
-            className="font-mono leading-[1.03] text-[#ab0782] hover:underline"
-          >
-            Home
-          </a>
-          <a
-            href="#"
-            className="font-mono font-medium leading-[1.03] text-black underline hover:no-underline"
-          >
-            About
-          </a>
-          <a
-            href="#"
-            className="font-mono leading-[1.03] text-[#5f00ad] hover:underline"
-          >
-            Contact
-          </a>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero Section */}
       <section className="px-0 py-20 md:pr-20 md:pt-[200px] md:pb-20 lg:pr-[100px]">
@@ -138,23 +102,7 @@ export default function Home() {
         </button>
       </section>
 
-      {/* Footer */}
-      <footer className="flex flex-col items-center pb-20 pt-0 px-0 font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px]">
-        <div className="w-full border-t border-[#4f4f4f] pt-[30px] pb-[150px] flex flex-col gap-10 md:flex-row md:justify-between md:gap-0 underline whitespace-nowrap">
-          <a href="#" className="text-[#ab0782] hover:no-underline">
-            Email
-          </a>
-          <a href="#" className="text-[#5f00ad] hover:no-underline">
-            Behance
-          </a>
-          <a href="#" className="text-[#0034ad] hover:no-underline">
-            LinkedIn
-          </a>
-        </div>
-        <p className="w-full text-black">
-          © Sarah Chen 2025 All Rights Reserved
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }
