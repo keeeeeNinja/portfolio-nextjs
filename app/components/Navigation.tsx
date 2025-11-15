@@ -33,12 +33,6 @@ export default function Navigation() {
         >
           About
         </a>
-        <a
-          href="/contact"
-          className="font-mono leading-[1.03] text-[#5f00ad] hover:underline"
-        >
-          Contact
-        </a>
       </div>
     </nav>
   );
