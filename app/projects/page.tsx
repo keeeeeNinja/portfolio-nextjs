@@ -4,8 +4,9 @@ import Footer from "../components/Footer";
 
 export default function Projects() {
   return (
-    <div className="min-h-screen bg-[#EDE3D5] px-[50px] max-w-[1280px] mx-auto">
-      <Navigation />
+    <div className="min-h-screen bg-[#EDE3D5]">
+      <div className="px-[50px] max-w-[1280px] mx-auto">
+        <Navigation />
 
       {/* Header */}
       <header className="flex flex-col gap-[19px] pt-[72px] pb-20 pr-0 md:pt-[200px] md:pb-20 lg:pr-[100px]">
@@ -26,9 +27,9 @@ export default function Projects() {
       <main className="flex flex-col gap-20 pb-20 md:pb-[100px]">
         {/* Image 01 */}
         <section className="flex flex-col gap-6 pt-[30px] pb-20 px-0 md:px-[100px] lg:pl-[200px] lg:pr-[80px]">
-          <div className="relative w-full aspect-[800/600] rounded-[10px] overflow-hidden">
+          <div className="relative w-full aspect-[900/565] rounded-[10px] overflow-hidden">
             <Image
-              src="/秋の実りを味わう.jpg"
+              src="/秋の実りを味わう2.jpg"
               alt="秋の実りを味わう"
               fill
               className="object-cover"
@@ -43,7 +44,7 @@ export default function Projects() {
         <section className="flex flex-col gap-6 pt-[30px] pb-[50px] pl-0 pr-0 md:pb-20 md:pr-[200px] lg:pr-[270px]">
           <div className="relative w-full aspect-[920/660] rounded-[10px] overflow-hidden">
             <Image
-              src="/誰もが愛する王道の甘さ2.jpg"
+              src="/誰もが愛する王道の甘さ3.jpg"
               alt="誰もが愛する王道の甘さ"
               fill
               className="object-cover"
@@ -95,11 +96,16 @@ export default function Projects() {
       {/* Explore More */}
       <section className="flex flex-col gap-12 pt-[30px] pb-0 border-t border-[#4f4f4f]/30 lg:pr-[120px]">
         <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-black">
-          From graphic design to interior spaces, see the breadth of my creative explorations.
+          秋の人気スイーツ特集サイト<br />
+          <a
+            href="https://autumn-sweets.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline cursor-pointer"
+          >
+            https://autumn-sweets.vercel.app/
+          </a>
         </p>
-        <h2 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] underline text-black">
-          More projects
-        </h2>
 
         {/* Projects Grid */}
         <div className="flex flex-col gap-12 md:flex-row md:gap-12">
@@ -180,7 +186,8 @@ export default function Projects() {
         </div>
       </section>
 
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 }

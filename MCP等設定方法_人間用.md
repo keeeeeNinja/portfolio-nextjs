@@ -3,11 +3,42 @@
 
 このサイト見て設定してって言えばできる。
 
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+○github MCPをグローバルに設定する方法。.mcp.json に書かなくてよい
 
-○github MCPは下記サイトで、Docker使わないで繋げてと言えばやってくれます。
-https://zenn.dev/gmomedia/articles/github-mcp-setup-guide
+・GitHub Personal Access Token の環境変数を設定する
 
-Docker入れないで、トークンの設定たけです。
+~/.zshrc に書く
+nano ~/.zshrc
+
+export GITHUB_PERSONAL_ACCESS_TOKEN="ghp_XXXXXXXXXXXXXXXXXXXXXXXX"
+
+Ctrl + O で保存
+Enter
+Ctrl + X で終了
+
+.zshrc を反映：
+
+source ~/.zshrc
+
+echo "$GITHUB_PERSONAL_ACCESS_TOKEN"
+
+
+・claude mcp add でリモートGitHub MCPを登録
+claude mcp add \
+    --transport http \
+    github \
+    https://api.githubcopilot.com/mcp \
+    -H "Authorization: Bearer $GITHUB_PERSONAL_ACCESS_TOKEN"
+
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+
+
+
+
+
 
 
 ・Context7 for Claude Code

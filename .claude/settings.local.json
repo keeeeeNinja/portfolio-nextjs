@@ -18,7 +18,12 @@
       "Bash(git rm:*)",
       "Bash(git reset:*)",
       "Read(//Users/keeee/Library/CloudStorage/GoogleDrive-allfork2011@gmail.com/マイドライブ/人生プロジェクト/portfolio_20251112/**)",
-      "Bash(npx:*)"
+      "Bash(npx:*)",
+      "Bash(curl -o /Users/keeee/Library/CloudStorage/GoogleDrive-allfork2011@gmail.com/マイドライブ/人生プロジェクト/portfolio_20251112/public/portrait.png \"http://localhost:3845/assets/554ffc35d754e7e61c354775382f05ed014e54a8.png\")",
+      "Bash(curl -o /Users/keeee/Library/CloudStorage/GoogleDrive-allfork2011@gmail.com/マイドライブ/人生プロジェクト/portfolio_20251112/public/project1.png \"http://localhost:3845/assets/583655d917b0da26a21126596fb38f729f12d19b.png\")",
+      "Bash(curl -o /Users/keeee/Library/CloudStorage/GoogleDrive-allfork2011@gmail.com/マイドライブ/人生プロジェクト/portfolio_20251112/public/project2.png \"http://localhost:3845/assets/fe388b8d4080bd5b2f1ce29ba6b5dd60df7560fe.png\")",
+      "Bash(curl -o /Users/keeee/Library/CloudStorage/GoogleDrive-allfork2011@gmail.com/マイドライブ/人生プロジェクト/portfolio_20251112/public/italy1.png \"http://localhost:3845/assets/c551792015c28d897eeb0f8d22c3485234f427b4.png\")",
+      "Bash(npm run dev:*)"
     ],
     "deny": [],
     "ask": []
