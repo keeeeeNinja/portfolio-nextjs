@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 export default function Projects() {
   return (
-    <div className="min-h-screen bg-[#EDE3D5]">
+    <div id="top" className="min-h-screen bg-[#EDE3D5]">
       <div className="px-[50px] max-w-[1280px] mx-auto">
         <Navigation />
 
@@ -59,7 +59,7 @@ export default function Projects() {
         <section className="flex flex-col gap-6 pt-[30px] pb-[50px] pl-0 pr-0 md:pb-20 md:pl-[200px] lg:pl-[200px]">
           <div className="relative w-full aspect-[4/3] rounded-[10px] overflow-hidden">
             <Image
-              src="/季節の新作.jpg"
+              src="/季節の新作2.jpg"
               alt="季節の新作"
               fill
               className="object-cover"
@@ -81,7 +81,7 @@ export default function Projects() {
         <section className="flex flex-col gap-5 lg:pr-[120px]">
           <div className="relative w-full aspect-[4/3] rounded-[10px] overflow-hidden">
             <Image
-              src="/SP版2.jpg"
+              src="/SP版3.jpg"
               alt="スマートフォン版"
               fill
               className="object-cover"
@@ -113,21 +113,23 @@ export default function Projects() {
           <article className="flex flex-col gap-12 pt-[50px] border-t-[0.5px] border-[#ab0782] md:flex-1">
             <div className="flex flex-col gap-[19px]">
               <h3 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] underline text-[#ab0782]">
-                Artwork
+                Website
               </h3>
               <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#ab0782]">
-                Illustration<br />sketches
+                Autumn Sweets<br />Demo Site
               </p>
-              <button className="border border-[#ab0782] px-[10px] pt-1 pb-[7px] w-fit">
-                <span className="font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] text-[#ab0782]">
-                  Explore
-                </span>
-              </button>
+              <a href="#top">
+                <button className="border border-[#ab0782] px-[10px] pt-1 pb-[7px] w-fit hover:bg-[#ab0782] hover:text-white transition-colors">
+                  <span className="font-mono font-normal text-base leading-[1.03] tracking-[-0.72px]">
+                    Explore
+                  </span>
+                </button>
+              </a>
             </div>
             <div className="relative w-full aspect-square rounded-[4px] overflow-hidden">
               <Image
-                src="/explore1.png"
-                alt="Abstract painting illustration"
+                src="/Sweets_thumb.jpg"
+                alt="Autumn Sweets Demo Site"
                 fill
                 className="object-cover"
               />
