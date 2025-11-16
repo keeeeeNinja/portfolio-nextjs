@@ -7,7 +7,7 @@ export default function Navigation() {
       <div className="flex items-center gap-5">
         <div className="relative w-10 h-10 md:w-[50px] md:h-[50px] rounded-full shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
           <Image
-            src="/portrait.png"
+            src="/header_icon_coromo.jpg"
             alt="Sarah Chen portrait"
             fill
             className="object-cover"
@@ -15,7 +15,7 @@ export default function Navigation() {
           />
         </div>
         <h1 className="font-serif text-2xl text-black tracking-[-1.08px] leading-[1.52] whitespace-nowrap">
-          Sarah Chen
+          Ryo Kijima
         </h1>
       </div>
 

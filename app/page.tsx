@@ -8,9 +8,9 @@ export default function Home() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="px-0 py-20 md:pr-20 md:pt-[200px] md:pb-20 lg:pr-[100px]">
+      <section className="px-0 py-20 md:pr-20 md:pt-[100px] md:pb-20 lg:pr-[100px]">
         <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-black">
-          I'm Sarah Chen, design student and explorer of visual languages. I'm passionate about understanding how different design disciplines intersect and create meaningful connections.
+        このポートフォリオサイトでは、私がこれまでに手がけてきたWebサイトや、Kindleで出版した書籍を紹介しています。
         </p>
       </section>
 
@@ -19,23 +19,24 @@ export default function Home() {
         {/* Text */}
         <div className="flex flex-col gap-[19px] md:flex-1">
           <h2 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] text-[#0034ad] underline">
-            Design
+            Website
           </h2>
           <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#0034ad]">
-            Yoga studio rebrand
+          秋の人気スイーツ特集
           </p>
-          <button className="border border-black px-2.5 py-1 w-fit font-mono text-base leading-[1.03] tracking-[-0.72px] hover:bg-black hover:text-white transition-colors">
+          <a href="/projects" className="border border-black px-2.5 py-1 w-fit font-mono text-base leading-[1.03] tracking-[-0.72px] hover:bg-black hover:text-white transition-colors">
             Explore
-          </button>
+          </a>
         </div>
 
         {/* Image */}
         <div className="relative w-full aspect-square md:flex-1">
           <Image
-            src="/project1.png"
+            src="/SweetsSite_thumb.jpg"
             alt="Yoga studio rebrand"
             fill
             className="object-cover"
+            style={{ objectPosition: 'calc(50% - 170px) center' }}
           />
         </div>
       </section>
