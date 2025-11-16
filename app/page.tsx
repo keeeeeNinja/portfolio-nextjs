@@ -18,7 +18,7 @@ export default function Home() {
       <section className="border-t-[0.5px] border-[#0034ad] pt-[50px] pb-20 px-0 flex flex-col gap-[50px] md:flex-row">
         {/* Text */}
         <div className="flex flex-col gap-[19px] md:flex-1">
-          <h2 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] text-[#0034ad] underline">
+          <h2 className="font-mono font-medium text-[20px] leading-[1.03] tracking-[-0.72px] text-[#0034ad] underline">
             Website
           </h2>
           <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#0034ad]">

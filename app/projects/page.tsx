@@ -4,90 +4,90 @@ import Footer from "../components/Footer";
 
 export default function Projects() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white/40 to-white/0 px-[50px] max-w-[1280px] mx-auto">
+    <div className="min-h-screen bg-[#EDE3D5] px-[50px] max-w-[1280px] mx-auto">
       <Navigation />
 
       {/* Header */}
       <header className="flex flex-col gap-[19px] pt-[72px] pb-20 pr-0 md:pt-[200px] md:pb-20 lg:pr-[100px]">
         <div className="flex flex-col gap-[19px] text-[#5f00ad]">
-          <h2 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] underline">
-            Photography
+          <h2 className="font-mono font-medium text-[20px] leading-[1.03] tracking-[-0.72px] underline">
+            Website
           </h2>
-          <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px]">
-            Echos of Italy
+          <p className="font-serif font-light text-[56px] leading-[1.2] tracking-[-2.25px]">
+          秋の人気スイーツ特集
           </p>
         </div>
-        <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-black">
-          'Echoes of Italy' is my lens on the country's timeless charm — candid moments, architectural details, and sun-kissed scenes.
+        <p className="font-serif font-light text-[40px] leading-[1.2] tracking-[-2.25px] text-black">
+          秋に人気のスイーツを特集したデモWebサイトです。Figmaデザインをもとに、HTML/CSS/JavaScriptで制作しました。
         </p>
       </header>
 
       {/* Main - Images Gallery */}
       <main className="flex flex-col gap-20 pb-20 md:pb-[100px]">
         {/* Image 01 */}
-        <section className="flex flex-col gap-6 pt-[30px] pb-20 px-0 md:px-[100px] lg:px-[240px]">
-          <div className="relative w-full aspect-[3/4]">
+        <section className="flex flex-col gap-6 pt-[30px] pb-20 px-0 md:px-[100px] lg:pl-[200px] lg:pr-[80px]">
+          <div className="relative w-full aspect-[800/600] rounded-[10px] overflow-hidden">
             <Image
-              src="/italy1.png"
-              alt="Wandering and wondering, lost in the rhythm of the city"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <p className="font-serif font-light text-base leading-[1.25] tracking-[-0.72px] text-[#313131] text-center">
-            Wandering and wondering, lost in the rhythm of the city.
-          </p>
-        </section>
-
-        {/* Image 02 */}
-        <section className="flex flex-col gap-6 pt-[30px] pb-[50px] pl-0 pr-0 md:pb-20 md:pr-[200px] lg:pr-[300px]">
-          <div className="relative w-full aspect-[4/3]">
-            <Image
-              src="/italy2.png"
-              alt="A symphony of motion and architecture, framed by history"
+              src="/秋の実りを味わう.jpg"
+              alt="秋の実りを味わう"
               fill
               className="object-cover"
             />
           </div>
           <p className="font-serif font-light text-base leading-[1.25] tracking-[-0.72px] text-[#313131]">
-            A symphony of motion and architecture, framed by history.
+            秋の実りを味わう
+          </p>
+        </section>
+
+        {/* Image 02 */}
+        <section className="flex flex-col gap-6 pt-[30px] pb-[50px] pl-0 pr-0 md:pb-20 md:pr-[200px] lg:pr-[270px]">
+          <div className="relative w-full aspect-[920/660] rounded-[10px] overflow-hidden">
+            <Image
+              src="/誰もが愛する王道の甘さ2.jpg"
+              alt="誰もが愛する王道の甘さ"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <p className="font-serif font-light text-base leading-[1.25] tracking-[-0.72px] text-[#313131]">
+            誰もが愛する王道の甘さ
           </p>
         </section>
 
         {/* Image 03 */}
         <section className="flex flex-col gap-6 pt-[30px] pb-[50px] pl-0 pr-0 md:pb-20 md:pl-[200px] lg:pl-[200px]">
-          <div className="relative w-full aspect-[4/3]">
+          <div className="relative w-full aspect-[4/3] rounded-[10px] overflow-hidden">
             <Image
-              src="/italy3.png"
-              alt="A study in contrasts: light, shadow, and the rhythm of the game"
+              src="/季節の新作.jpg"
+              alt="季節の新作"
               fill
               className="object-cover"
             />
           </div>
           <p className="font-serif font-light text-base leading-[1.25] tracking-[-0.72px] text-[#313131]">
-            A study in contrasts: light, shadow, and the rhythm of the game.
+            季節の新作
           </p>
         </section>
 
         {/* Text */}
         <section className="pr-0 lg:pr-[120px]">
           <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-black">
-            From sun-drenched piazzas to intimate still-lives, I aimed to capture the soul of the country through light and composition.
+            スマートフォン対応のレスポンシブデザイン。
           </p>
         </section>
 
         {/* Image 04 */}
         <section className="flex flex-col gap-5 lg:pr-[120px]">
-          <div className="relative w-full aspect-[4/3]">
+          <div className="relative w-full aspect-[4/3] rounded-[10px] overflow-hidden">
             <Image
-              src="/italy4.png"
-              alt="Dockside perspective, capturing the soul of the water"
+              src="/SP版2.jpg"
+              alt="スマートフォン版"
               fill
               className="object-cover"
             />
           </div>
           <p className="font-serif font-light text-[30px] leading-[1.2] tracking-[-1.35px] text-black">
-            Dockside perspective, capturing the soul of the water.
+            スマートフォン版
           </p>
         </section>
       </main>
