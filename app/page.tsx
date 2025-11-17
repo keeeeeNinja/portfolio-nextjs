@@ -49,10 +49,10 @@ export default function Home() {
         {/* Text */}
         <div className="flex flex-col gap-[19px] md:flex-1">
           <h2 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] text-[#ab0782] underline">
-            Artwork
+            Website
           </h2>
           <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#ab0782]">
-            Abstract paintings
+            ポートフォリオサイト
           </p>
           <button className="border border-[#ab0782] px-2.5 py-1 w-fit font-mono text-base leading-[1.03] tracking-[-0.72px] text-[#ab0782] hover:bg-[#ab0782] hover:text-white transition-colors">
             Explore
