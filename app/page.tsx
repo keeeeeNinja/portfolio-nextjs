@@ -14,29 +14,32 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Project 1 */}
-      <section className="border-t-[0.5px] border-[#0034ad] pt-[50px] pb-20 px-0 flex flex-col gap-[50px] md:flex-row">
-        {/* Text */}
+      {/* Autumn Sweets Special Feature Site */}
+      <section className="flex flex-col gap-[50px] px-0 pt-[50px] pb-20 border-t-[0.5px] border-[#0034ad] md:flex-row">
+        {/* Text Content */}
         <div className="flex flex-col gap-[19px] md:flex-1">
           <h2 className="font-mono font-medium text-[20px] leading-[1.03] tracking-[-0.72px] text-[#0034ad] underline">
             Website
           </h2>
           <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#0034ad]">
-          秋の人気スイーツ特集
+            秋の人気スイーツ特集
           </p>
-          <a href="/projects" className="border border-black px-2.5 py-1 w-fit font-mono text-base leading-[1.03] tracking-[-0.72px] hover:bg-black hover:text-white transition-colors">
+          <a
+            href="/projects"
+            className="w-fit px-2.5 py-1 font-mono text-base leading-[1.03] tracking-[-0.72px] border border-black transition-colors hover:bg-black hover:text-white"
+            aria-label="秋の人気スイーツ特集サイトの詳細を見る"
+          >
             Explore
           </a>
         </div>
 
         {/* Image */}
-        <div className="relative w-full aspect-square md:flex-1">
+        <div className="relative w-full aspect-square rounded-[4px] overflow-hidden md:flex-1">
           <Image
-            src="/SweetsSite_thumb.jpg"
-            alt="Yoga studio rebrand"
+            src="/SweetsSite_thumb2.jpg"
+            alt="秋の人気スイーツ特集サイトのサムネイル画像"
             fill
             className="object-cover"
-            style={{ objectPosition: 'calc(50% - 170px) center' }}
           />
         </div>
       </section>
