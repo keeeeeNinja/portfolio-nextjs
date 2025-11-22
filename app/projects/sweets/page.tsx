@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import Navigation from "../../components/Navigation";
+import Footer from "../../components/Footer";
 
 export default function Projects() {
   return (
@@ -162,25 +162,27 @@ export default function Projects() {
             </div>
           </article>
 
-          {/* Project 03 */}
-          <article className="flex flex-col gap-12 pt-[50px] border-t-[0.5px] border-[#0034ad] md:flex-1">
+          {/* Project 03 - Portfolio Site */}
+          <article className="flex flex-col gap-12 pt-[50px] border-t-[0.5px] border-[#ab0782] md:flex-1">
             <div className="flex flex-col gap-[19px]">
-              <h3 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] underline text-[#0034ad]">
-                Design
+              <h3 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] underline text-[#ab0782]">
+                Website
               </h3>
-              <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#0034ad]">
-                Castro Capital branding
+              <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#ab0782]">
+                Portfolio<br />Site
               </p>
-              <button className="border border-[#0034ad] px-[10px] pt-1 pb-[7px] w-fit">
-                <span className="font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] text-[#0034ad]">
-                  Explore
-                </span>
-              </button>
+              <a
+                href="/projects/portfolio"
+                className="w-fit px-[10px] pt-1 pb-[7px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] border border-[#ab0782] transition-colors hover:bg-[#ab0782] hover:text-white"
+                aria-label="ポートフォリオサイトの詳細を見る"
+              >
+                Explore
+              </a>
             </div>
             <div className="relative w-full aspect-square rounded-[4px] overflow-hidden">
               <Image
-                src="/explore3.png"
-                alt="Castro Capital branding materials"
+                src="/Portfolio_thumb.jpg"
+                alt="ポートフォリオサイトのサムネイル"
                 fill
                 className="object-cover"
               />

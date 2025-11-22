@@ -25,7 +25,7 @@ export default function Home() {
             秋の人気スイーツ特集
           </p>
           <a
-            href="/projects"
+            href="/projects/sweets"
             className="w-fit px-2.5 py-1 font-mono text-base leading-[1.03] tracking-[-0.72px] border border-black transition-colors hover:bg-black hover:text-white"
             aria-label="秋の人気スイーツ特集サイトの詳細を見る"
           >
@@ -54,16 +54,20 @@ export default function Home() {
           <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#ab0782]">
             ポートフォリオサイト
           </p>
-          <button className="border border-[#ab0782] px-2.5 py-1 w-fit font-mono text-base leading-[1.03] tracking-[-0.72px] text-[#ab0782] hover:bg-[#ab0782] hover:text-white transition-colors">
+          <a
+            href="/projects/portfolio"
+            className="border border-[#ab0782] px-2.5 py-1 w-fit font-mono text-base leading-[1.03] tracking-[-0.72px] text-[#ab0782] hover:bg-[#ab0782] hover:text-white transition-colors"
+            aria-label="ポートフォリオサイトの詳細を見る"
+          >
             Explore
-          </button>
+          </a>
         </div>
 
         {/* Image */}
-        <div className="relative w-full aspect-square md:flex-1 rounded-[4px] overflow-hidden">
+        <div className="relative w-full aspect-[667/484] md:flex-1 rounded-[4px] overflow-hidden">
           <Image
-            src="/project2.png"
-            alt="Abstract paintings"
+            src="/Home2.jpg"
+            alt="Home"
             fill
             className="object-cover"
           />

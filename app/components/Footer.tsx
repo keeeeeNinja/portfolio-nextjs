@@ -13,7 +13,7 @@ export default function Footer() {
         </a>
       </div>
       <p className="w-full text-black">
-        © Sarah Chen 2025 All Rights Reserved
+        © Ryo Kijima 2025 All Rights Reserved
       </p>
     </footer>
   );
