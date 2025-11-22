@@ -76,14 +76,14 @@ export default function About() {
         <div className="flex flex-col gap-12 md:flex-row md:gap-12">
           {/* Project 01 */}
           <article className="flex flex-col gap-12 pt-[50px] border-t-[0.5px] border-[#ab0782] md:flex-1">
-            <div className="flex flex-col gap-[19px]">
+            <div className="flex flex-col gap-[19px] flex-1">
               <h3 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] underline text-[#ab0782]">
                 Artwork
               </h3>
               <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#ab0782]">
                 Illustration<br />sketches
               </p>
-              <button className="border border-[#ab0782] px-[10px] pt-1 pb-[7px] w-fit">
+              <button className="mt-auto border border-[#ab0782] px-[10px] pt-1 pb-[7px] w-fit">
                 <span className="font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] text-[#ab0782]">
                   Explore
                 </span>
@@ -99,25 +99,27 @@ export default function About() {
             </div>
           </article>
 
-          {/* Project 02 */}
+          {/* Project 02 - Last Diet */}
           <article className="flex flex-col gap-12 pt-[50px] border-t-[0.5px] border-[#6e660a] md:flex-1">
-            <div className="flex flex-col gap-[19px]">
+            <div className="flex flex-col gap-[19px] flex-1">
               <h3 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] underline text-[#6e660a]">
-                Editorial
+                Books
               </h3>
-              <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#6e660a]">
-                Magazine<br />study
+              <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#6e660a] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
+                Last Diet
               </p>
-              <button className="border border-[#6e660a] px-[10px] pt-1 pb-[7px] w-fit">
-                <span className="font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] text-[#6e660a]">
-                  Explore
-                </span>
-              </button>
+              <a
+                href="/projects/last-diet"
+                className="mt-auto w-fit px-[10px] pt-1 pb-[7px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] border border-[#6e660a] transition-colors hover:bg-[#6e660a] hover:text-white"
+                aria-label="Last Dietの詳細を見る"
+              >
+                Explore
+              </a>
             </div>
             <div className="relative w-full aspect-square rounded-[4px] overflow-hidden">
               <Image
-                src="/explore2.png"
-                alt="Magazine spread"
+                src="/ラストダイエット_thumb.png"
+                alt="Last Diet サムネイル"
                 fill
                 className="object-cover"
               />
@@ -126,14 +128,14 @@ export default function About() {
 
           {/* Project 03 */}
           <article className="flex flex-col gap-12 pt-[50px] border-t-[0.5px] border-[#0034ad] md:flex-1">
-            <div className="flex flex-col gap-[19px]">
+            <div className="flex flex-col gap-[19px] flex-1">
               <h3 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] underline text-[#0034ad]">
                 Design
               </h3>
               <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#0034ad]">
                 Castro Capital branding
               </p>
-              <button className="border border-[#0034ad] px-[10px] pt-1 pb-[7px] w-fit">
+              <button className="mt-auto border border-[#0034ad] px-[10px] pt-1 pb-[7px] w-fit">
                 <span className="font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] text-[#0034ad]">
                   Explore
                 </span>

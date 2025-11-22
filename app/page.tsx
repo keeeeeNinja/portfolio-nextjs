@@ -9,7 +9,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="px-0 py-20 md:pr-20 md:pt-[100px] md:pb-20 lg:pr-[100px]">
-        <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-black">
+        <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-black md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
         このポートフォリオサイトでは、私がこれまでに手がけてきたWebサイトや、Kindleで出版した書籍を紹介しています。
         </p>
       </section>
@@ -18,10 +18,10 @@ export default function Home() {
       <section className="flex flex-col gap-[50px] px-0 pt-[50px] pb-20 border-t-[0.5px] border-[#0034ad] md:flex-row">
         {/* Text Content */}
         <div className="flex flex-col gap-[19px] md:flex-1">
-          <h2 className="font-mono font-medium text-[20px] leading-[1.03] tracking-[-0.72px] text-[#0034ad] underline">
+          <h2 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] text-[#0034ad] underline">
             Website
           </h2>
-          <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#0034ad]">
+          <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#0034ad] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
             秋の人気スイーツ特集
           </p>
           <a
@@ -51,8 +51,8 @@ export default function Home() {
           <h2 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] text-[#ab0782] underline">
             Website
           </h2>
-          <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#ab0782]">
-            ポートフォリオサイト
+          <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#ab0782] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
+            ポートフォリオ<br className="hidden md:block lg:hidden" />サイト
           </p>
           <a
             href="/projects/portfolio"
@@ -75,14 +75,14 @@ export default function Home() {
       </section>
 
       {/* Project 3 */}
-      <section className="border-t-[0.5px] border-[#6e660a] pt-[50px] pb-20 px-0 flex flex-col gap-[50px] md:flex-row">
+      <section className="border-t-[0.5px] border-[#6e660a] pt-[50px] pb-[160px] px-0 flex flex-col gap-[50px] md:flex-row">
         {/* Text */}
         <div className="flex flex-col gap-[19px] md:flex-1">
           <h2 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] text-[#6e660a] underline">
             Books
           </h2>
-          <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#6e660a]">
-            Last Diet
+          <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#6e660a] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
+            ラストダイエット
           </p>
           <a
             href="/projects/last-diet"
@@ -94,9 +94,9 @@ export default function Home() {
         </div>
 
         {/* Image */}
-        <div className="relative w-full aspect-[565/848] md:flex-1 rounded-[4px] overflow-hidden">
+        <div className="relative w-full aspect-square rounded-[4px] overflow-hidden md:flex-1">
           <Image
-            src="/ラストダイエット.jpg"
+            src="/ラストダイエット1.jpg"
             alt="Last Diet"
             fill
             className="object-cover"

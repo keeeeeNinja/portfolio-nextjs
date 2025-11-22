@@ -14,11 +14,11 @@ export default function LastDietProject() {
           <h1 className="font-mono font-medium text-[20px] leading-[1.03] tracking-[-0.72px] underline">
             Books
           </h1>
-          <p className="font-serif font-light text-[56px] leading-[1.2] tracking-[-2.25px]">
-            Last Diet
+          <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] md:text-[36px] lg:text-[56px] lg:leading-[1.2] lg:tracking-[-2.25px]">
+            ラストダイエット
           </p>
         </div>
-        <p className="font-serif font-light text-[40px] leading-[1.2] tracking-[-2.25px] text-black">
+        <p className="font-serif font-light text-[24px] leading-[1.35] tracking-[-0.84px] text-black md:text-[32px] lg:text-[40px] lg:leading-[1.2] lg:tracking-[-2.25px]">
           Kindleで出版したダイエット本です。
         </p>
       </header>
@@ -57,7 +57,7 @@ export default function LastDietProject() {
 
         {/* Description */}
         <section className="pr-0 lg:pr-[120px]">
-          <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-black">
+          <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-black md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
             ラストダイエットは、食生活を整える長期的なダイエットの紹介です。
           </p>
         </section>
@@ -65,7 +65,7 @@ export default function LastDietProject() {
 
       {/* External Link Section */}
       <section className="flex flex-col gap-12 px-0 pt-[30px] pb-0 lg:pr-[120px]">
-        <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-black">
+        <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-black md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
           ラストダイエット
           <a
             href="https://www.amazon.co.jp/%E3%83%A9%E3%82%B9%E3%83%88%E3%83%80%E3%82%A4%E3%82%A8%E3%83%83%E3%83%88-%E4%BA%BA%E7%94%9F%E6%9C%80%E5%BE%8C%E3%81%AE%E3%83%80%E3%82%A4%E3%82%A8%E3%83%83%E3%83%88%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%A7%E3%81%97%E3%82%87%E3%81%86%E3%80%82-%E5%96%9C%E5%B3%B6%E3%81%93%E3%82%8D%E3%82%82-ebook/dp/B0FW2PN2GR"
@@ -86,12 +86,12 @@ export default function LastDietProject() {
               <h3 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] text-[#6e660a] underline">
                 Books
               </h3>
-              <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#6e660a]">
+              <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#6e660a] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
                 Last Diet
               </p>
               <a
                 href="#top"
-                className="w-fit px-[10px] pt-1 pb-[7px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] border border-[#6e660a] transition-colors hover:bg-[#6e660a] hover:text-white"
+                className="mt-auto w-fit px-[10px] pt-1 pb-[7px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] border border-[#6e660a] transition-colors hover:bg-[#6e660a] hover:text-white"
                 aria-label="ページトップに戻る"
               >
                 Explore
@@ -113,12 +113,12 @@ export default function LastDietProject() {
               <h3 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] underline text-[#0034ad]">
                 Website
               </h3>
-              <p className="font-serif font-light text-[40px] leading-[1.2] tracking-[-2.25px] text-[#0034ad]">
+              <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#0034ad] md:text-[32px] lg:text-[40px] lg:leading-[1.2] lg:tracking-[-2.25px]">
                 秋の人気<br />スイーツ特集
               </p>
               <a
                 href="/projects/sweets"
-                className="w-fit px-[10px] pt-1 pb-[7px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] border border-[#0034ad] transition-colors hover:bg-[#0034ad] hover:text-white"
+                className="mt-auto w-fit px-[10px] pt-1 pb-[7px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] border border-[#0034ad] transition-colors hover:bg-[#0034ad] hover:text-white"
                 aria-label="秋の人気スイーツ特集サイトの詳細を見る"
               >
                 Explore
@@ -140,12 +140,12 @@ export default function LastDietProject() {
               <h3 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] underline text-[#ab0782]">
                 Website
               </h3>
-              <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#ab0782]">
+              <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#ab0782] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
                 Portfolio Site
               </p>
               <a
                 href="/projects/portfolio"
-                className="w-fit px-[10px] pt-1 pb-[7px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] border border-[#ab0782] transition-colors hover:bg-[#ab0782] hover:text-white"
+                className="mt-auto w-fit px-[10px] pt-1 pb-[7px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] border border-[#ab0782] transition-colors hover:bg-[#ab0782] hover:text-white"
                 aria-label="ポートフォリオサイトの詳細を見る"
               >
                 Explore

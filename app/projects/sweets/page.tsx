@@ -14,11 +14,11 @@ export default function Projects() {
           <h1 className="font-mono font-medium text-[20px] leading-[1.03] tracking-[-0.72px] underline">
             Website
           </h1>
-          <p className="font-serif font-light text-[56px] leading-[1.2] tracking-[-2.25px]">
+          <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] md:text-[36px] lg:text-[56px] lg:leading-[1.2] lg:tracking-[-2.25px]">
             秋の人気スイーツ特集
           </p>
         </div>
-        <p className="font-serif font-light text-[40px] leading-[1.2] tracking-[-2.25px] text-black">
+        <p className="font-serif font-light text-[24px] leading-[1.35] tracking-[-0.84px] text-black md:text-[32px] lg:text-[40px] lg:leading-[1.2] lg:tracking-[-2.25px]">
           秋に人気のスイーツを特集したデモWebサイトです。Figmaデザインをもとに、HTML/CSS/JavaScriptで制作しました。
         </p>
       </header>
@@ -72,7 +72,7 @@ export default function Projects() {
 
         {/* Responsive Design Description */}
         <section className="pr-0 lg:pr-[120px]">
-          <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-black">
+          <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-black md:text-[32px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
             スマートフォン対応のレスポンシブデザイン。
           </p>
         </section>
@@ -94,8 +94,8 @@ export default function Projects() {
       </main>
 
       {/* External Link Section */}
-      <section className="flex flex-col gap-12 px-0 pt-[30px] pb-0 border-t border-[#4f4f4f]/30 lg:pr-[120px]">
-        <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-black">
+      <section className="flex flex-col gap-12 px-0 pt-[30px] pb-0 border-t border-[#4f4f4f]/30">
+        <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-black md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
           秋の人気スイーツ特集サイト<br />
           <a
             href="https://autumn-sweets.vercel.app/"
@@ -112,16 +112,16 @@ export default function Projects() {
         <div className="flex flex-col gap-12 md:flex-row md:gap-12">
           {/* Current Project Card */}
           <article className="flex flex-col gap-12 pt-[50px] border-t-[0.5px] border-[#ab0782] md:flex-1">
-            <div className="flex flex-col gap-[19px]">
+            <div className="flex flex-col gap-[19px] flex-1">
               <h3 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] text-[#ab0782] underline">
                 Website
               </h3>
-              <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#ab0782]">
+              <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#ab0782] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
                 Autumn Sweets<br />Demo Site
               </p>
               <a
                 href="#top"
-                className="w-fit px-[10px] pt-1 pb-[7px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] border border-[#ab0782] transition-colors hover:bg-[#ab0782] hover:text-white"
+                className="mt-auto w-fit px-[10px] pt-1 pb-[7px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] border border-[#ab0782] transition-colors hover:bg-[#ab0782] hover:text-white"
                 aria-label="ページトップに戻る"
               >
                 Explore
@@ -137,25 +137,27 @@ export default function Projects() {
             </div>
           </article>
 
-          {/* Project 02 */}
+          {/* Project 02 - Last Diet */}
           <article className="flex flex-col gap-12 pt-[50px] border-t-[0.5px] border-[#6e660a] md:flex-1">
-            <div className="flex flex-col gap-[19px]">
+            <div className="flex flex-col gap-[19px] flex-1">
               <h3 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] underline text-[#6e660a]">
-                Editorial
+                Books
               </h3>
-              <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#6e660a]">
-                Magazine<br />study
+              <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#6e660a] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
+                Last Diet
               </p>
-              <button className="border border-[#6e660a] px-[10px] pt-1 pb-[7px] w-fit">
-                <span className="font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] text-[#6e660a]">
-                  Explore
-                </span>
-              </button>
+              <a
+                href="/projects/last-diet"
+                className="mt-auto w-fit px-[10px] pt-1 pb-[7px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] border border-[#6e660a] transition-colors hover:bg-[#6e660a] hover:text-white"
+                aria-label="Last Dietの詳細を見る"
+              >
+                Explore
+              </a>
             </div>
             <div className="relative w-full aspect-square rounded-[4px] overflow-hidden">
               <Image
-                src="/explore2.png"
-                alt="Magazine spread"
+                src="/ラストダイエット_thumb.png"
+                alt="Last Diet サムネイル"
                 fill
                 className="object-cover"
               />
@@ -164,16 +166,16 @@ export default function Projects() {
 
           {/* Project 03 - Portfolio Site */}
           <article className="flex flex-col gap-12 pt-[50px] border-t-[0.5px] border-[#ab0782] md:flex-1">
-            <div className="flex flex-col gap-[19px]">
+            <div className="flex flex-col gap-[19px] flex-1">
               <h3 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] underline text-[#ab0782]">
                 Website
               </h3>
-              <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#ab0782]">
+              <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#ab0782] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
                 Portfolio<br />Site
               </p>
               <a
                 href="/projects/portfolio"
-                className="w-fit px-[10px] pt-1 pb-[7px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] border border-[#ab0782] transition-colors hover:bg-[#ab0782] hover:text-white"
+                className="mt-auto w-fit px-[10px] pt-1 pb-[7px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] border border-[#ab0782] transition-colors hover:bg-[#ab0782] hover:text-white"
                 aria-label="ポートフォリオサイトの詳細を見る"
               >
                 Explore
