@@ -4,37 +4,47 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white/40 to-white/0 px-[50px] max-w-[1280px] mx-auto">
+    <div className="min-h-screen bg-white px-[50px] max-w-[1280px] mx-auto">
       <Navigation />
 
       {/* Hero Section */}
-      <section className="px-0 py-20 md:pr-20 md:pt-[100px] md:pb-20 lg:pr-[100px]">
-        <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-black md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
-        このポートフォリオサイトでは、私がこれまでに手がけてきたWebサイトや、Kindleで出版した書籍を紹介しています。
-        </p>
+      <section className="px-0 pt-16 pb-16 md:pt-24 md:pb-20 lg:max-w-[900px]">
+        <h1 className="font-serif font-normal text-[28px] leading-[1.4] tracking-[-0.5px] text-[#111] md:text-[36px] lg:text-[48px] lg:leading-[1.3]">
+          このポートフォリオサイトでは、私がこれまでに手がけてきたWebサイトや、Kindleで出版した書籍を紹介しています。
+        </h1>
       </section>
 
-      {/* Autumn Sweets Special Feature Site */}
-      <section className="flex flex-col gap-[50px] px-0 pt-[50px] pb-20 border-t-[0.5px] border-[#0034ad] md:flex-row">
+      {/* Works Section Label */}
+      <div className="pb-8">
+        <span className="font-mono font-medium text-[13px] leading-[1.2] tracking-[0.5px] text-[#666] uppercase">
+          Featured Works
+        </span>
+      </div>
+
+      {/* Project Card 1 - Sweets */}
+      <section className="flex flex-col gap-8 px-0 pt-10 pb-12 border-t border-[#0034ad] md:flex-row md:gap-16 md:items-center">
         {/* Text Content */}
-        <div className="flex flex-col gap-[19px] md:flex-1">
-          <h2 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] text-[#0034ad] underline">
+        <div className="flex flex-col gap-5 md:flex-1">
+          <span className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] text-[#0034ad] uppercase">
             Website
-          </h2>
-          <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#0034ad] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
+          </span>
+          <h2 className="font-serif font-normal text-[28px] leading-[1.2] tracking-[-0.5px] text-[#0034ad] md:text-[32px] lg:text-[44px]">
             秋の人気スイーツ特集
+          </h2>
+          <p className="font-serif font-light text-[16px] leading-[1.7] text-[#666] max-w-[400px]">
+            秋に人気のスイーツを特集したデモWebサイト。Figmaデザインをもとに制作。
           </p>
           <a
             href="/projects/sweets"
-            className="w-fit px-2.5 py-1 font-mono text-base leading-[1.03] tracking-[-0.72px] border border-black transition-colors hover:bg-black hover:text-white"
+            className="mt-4 w-fit px-5 py-2.5 font-mono text-[13px] leading-[1.2] tracking-[0.5px] bg-[#0034ad] text-white rounded-lg transition-all hover:bg-[#002080] hover:shadow-lg"
             aria-label="秋の人気スイーツ特集サイトの詳細を見る"
           >
-            Explore
+            Explore →
           </a>
         </div>
 
         {/* Image */}
-        <div className="relative w-full aspect-square rounded-[4px] overflow-hidden md:flex-1">
+        <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden md:flex-1 md:max-w-[500px]">
           <Image
             src="/SweetsSite_thumb2.jpg"
             alt="秋の人気スイーツ特集サイトのサムネイル画像"
@@ -44,60 +54,66 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Project 2 */}
-      <section className="border-t-[0.5px] border-[#ab0782] pt-[50px] pb-20 px-0 flex flex-col gap-[50px] md:flex-row">
+      {/* Project Card 2 - Portfolio */}
+      <section className="flex flex-col gap-8 px-0 pt-10 pb-12 border-t border-[#ab0782] md:flex-row md:gap-16 md:items-center">
         {/* Text */}
-        <div className="flex flex-col gap-[19px] md:flex-1">
-          <h2 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] text-[#ab0782] underline">
+        <div className="flex flex-col gap-5 md:flex-1">
+          <span className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] text-[#ab0782] uppercase">
             Website
+          </span>
+          <h2 className="font-serif font-normal text-[28px] leading-[1.2] tracking-[-0.5px] text-[#ab0782] md:text-[32px] lg:text-[44px]">
+            ポートフォリオサイト
           </h2>
-          <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#ab0782] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
-            ポートフォリオ<br className="hidden md:block lg:hidden" />サイト
+          <p className="font-serif font-light text-[16px] leading-[1.7] text-[#666] max-w-[400px]">
+            シンプルで見やすいポートフォリオサイトのコーディング。HTML/CSSで制作。
           </p>
           <a
             href="/projects/portfolio"
-            className="border border-[#ab0782] px-2.5 py-1 w-fit font-mono text-base leading-[1.03] tracking-[-0.72px] text-[#ab0782] hover:bg-[#ab0782] hover:text-white transition-colors"
+            className="mt-4 w-fit px-5 py-2.5 font-mono text-[13px] leading-[1.2] tracking-[0.5px] bg-[#ab0782] text-white rounded-lg transition-all hover:bg-[#8a0668] hover:shadow-lg"
             aria-label="ポートフォリオサイトの詳細を見る"
           >
-            Explore
+            Explore →
           </a>
         </div>
 
         {/* Image */}
-        <div className="relative w-full aspect-[667/484] md:flex-1 rounded-[4px] overflow-hidden">
+        <div className="relative w-full aspect-[4/3] md:flex-1 md:max-w-[500px] rounded-lg overflow-hidden">
           <Image
             src="/Home2.jpg"
-            alt="Home"
+            alt="ポートフォリオサイトのホーム画面"
             fill
             className="object-cover"
           />
         </div>
       </section>
 
-      {/* Project 3 */}
-      <section className="border-t-[0.5px] border-[#6e660a] pt-[50px] pb-[160px] px-0 flex flex-col gap-[50px] md:flex-row">
+      {/* Project Card 3 - Last Diet */}
+      <section className="flex flex-col gap-8 px-0 pt-10 pb-32 border-t border-[#6e660a] md:flex-row md:gap-16 md:items-center">
         {/* Text */}
-        <div className="flex flex-col gap-[19px] md:flex-1">
-          <h2 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] text-[#6e660a] underline">
+        <div className="flex flex-col gap-5 md:flex-1">
+          <span className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] text-[#6e660a] uppercase">
             Books
-          </h2>
-          <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#6e660a] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
+          </span>
+          <h2 className="font-serif font-normal text-[28px] leading-[1.2] tracking-[-0.5px] text-[#6e660a] md:text-[32px] lg:text-[44px]">
             ラストダイエット
+          </h2>
+          <p className="font-serif font-light text-[16px] leading-[1.7] text-[#666] max-w-[400px]">
+            Kindleで出版したダイエット本。食生活を整える長期的なダイエット法を紹介。
           </p>
           <a
             href="/projects/last-diet"
-            className="border border-black px-2.5 py-1 w-fit font-mono text-base leading-[1.03] tracking-[-0.72px] hover:bg-black hover:text-white transition-colors"
+            className="mt-4 w-fit px-5 py-2.5 font-mono text-[13px] leading-[1.2] tracking-[0.5px] bg-[#6e660a] text-white rounded-lg transition-all hover:bg-[#565108] hover:shadow-lg"
             aria-label="Last Dietの詳細を見る"
           >
-            Explore
+            Explore →
           </a>
         </div>
 
         {/* Image */}
-        <div className="relative w-full aspect-square rounded-[4px] overflow-hidden md:flex-1">
+        <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden md:flex-1 md:max-w-[500px]">
           <Image
-            src="/last-diet-home.jpg"
-            alt="Last Diet"
+            src="/last-diet-home2.jpg"
+            alt="ラストダイエット"
             fill
             className="object-cover"
           />

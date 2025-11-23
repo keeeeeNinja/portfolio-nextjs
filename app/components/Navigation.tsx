@@ -1,14 +1,20 @@
+"use client";
+
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Navigation() {
+  const pathname = usePathname();
+
+  // アクティブ状態の判定
+  const isHome = pathname === "/" || pathname.startsWith("/projects");
+  const isAbout = pathname === "/about";
+
   return (
-    <nav className="flex flex-row items-start justify-between gap-5 -mx-[50px] px-5 pt-5 pb-[30px] border-b border-[#4f4f4f]/30 md:items-center md:px-12 md:pt-[30px] md:pb-[30px] lg:px-[50px]">
-      {/* Name Section */}
-      <div className="flex flex-col gap-2.5 md:flex-row md:items-end md:gap-8">
-        <h1 className="font-serif text-2xl text-black tracking-[-1.08px] leading-[1.52] whitespace-nowrap md:order-2 md:text-[32px]">
-          Ryo Kijima
-        </h1>
-        <div className="relative w-10 h-10 md:w-[120px] md:h-[120px] rounded-full shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] overflow-hidden md:order-1">
+    <nav className="flex flex-row items-center justify-between gap-5 -mx-[50px] px-5 py-4 border-b border-[#e5e5e5] md:px-12 md:py-5 lg:px-[50px]">
+      {/* Brand Block - アバター + 名前 + 肩書き */}
+      <a href="/" className="flex items-center gap-3 group">
+        <div className="relative w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden flex-shrink-0">
           <Image
             src="/header_icon_coromo.jpg"
             alt="Ryo Kijima portrait"
@@ -17,21 +23,45 @@ export default function Navigation() {
             priority
           />
         </div>
-      </div>
+        <div className="flex flex-col">
+          <span className="font-serif text-lg text-[#111] tracking-[-0.5px] leading-tight md:text-xl group-hover:text-[#ab0782] transition-colors">
+            Ryo Kijima
+          </span>
+          <span className="font-mono text-[11px] text-[#666] tracking-[0.3px] leading-tight hidden md:block">
+            Web Developer & Writer
+          </span>
+        </div>
+      </a>
 
-      {/* Links */}
-      <div className="flex flex-col items-end gap-2.5 text-base tracking-[-0.72px] md:flex-row md:items-center">
+      {/* Navigation Links */}
+      <div className="flex items-center gap-1 md:gap-2">
         <a
           href="/"
-          className="font-mono leading-[1.03] text-[#ab0782] hover:underline"
+          className={`px-3 py-1.5 font-mono text-[14px] tracking-[0.3px] rounded-md transition-colors ${
+            isHome
+              ? "text-[#ab0782] bg-[#ab0782]/5"
+              : "text-[#444] hover:text-[#111] hover:bg-[#f5f5f5]"
+          }`}
         >
           Home
         </a>
         <a
           href="/about"
-          className="font-mono font-medium leading-[1.03] text-black underline hover:no-underline"
+          className={`px-3 py-1.5 font-mono text-[14px] tracking-[0.3px] rounded-md transition-colors ${
+            isAbout
+              ? "text-[#ab0782] bg-[#ab0782]/5"
+              : "text-[#444] hover:text-[#111] hover:bg-[#f5f5f5]"
+          }`}
         >
           About
+        </a>
+
+        {/* CTA Button - Contact */}
+        <a
+          href="mailto:allfork2011@gmail.com"
+          className="ml-2 px-4 py-1.5 font-mono text-[13px] tracking-[0.3px] border border-[#ab0782] text-[#ab0782] rounded-full transition-all hover:bg-[#ab0782] hover:text-white hover:shadow-sm"
+        >
+          Contact
         </a>
       </div>
     </nav>

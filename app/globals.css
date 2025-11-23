@@ -3,6 +3,55 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Typography Scale - Refactoring UI */
+  /* H1: Page main heading */
+  --text-h1: 32px;
+  --text-h1-md: 40px;
+  --text-h1-lg: 56px;
+
+  /* H2: Section title */
+  --text-h2: 24px;
+  --text-h2-md: 28px;
+  --text-h2-lg: 40px;
+
+  /* H3: Card title */
+  --text-h3: 20px;
+  --text-h3-md: 24px;
+  --text-h3-lg: 32px;
+
+  /* Body text */
+  --text-body: 16px;
+  --text-body-lg: 18px;
+
+  /* Label (category, button) */
+  --text-label: 13px;
+
+  /* Color System - Refactoring UI */
+  /* Base text colors */
+  --color-text-primary: #111111;
+  --color-text-secondary: #666666;
+  --color-text-muted: #999999;
+
+  /* Category colors */
+  --color-sweets: #0034ad;
+  --color-portfolio: #ab0782;
+  --color-lastdiet: #6e660a;
+
+  /* Spacing Scale (8px base) */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-6: 48px;
+  --space-8: 64px;
+  --space-12: 96px;
+  --space-16: 128px;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
 }
 
 @theme inline {
