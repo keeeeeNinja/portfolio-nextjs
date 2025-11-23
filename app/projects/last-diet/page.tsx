@@ -29,7 +29,7 @@ export default function LastDietProject() {
         <section className="flex flex-col gap-6 px-0 pt-[30px] pb-20 md:px-[100px] lg:pl-[200px] lg:pr-[80px]">
           <div className="relative w-full aspect-[900/1256] rounded-[10px] overflow-hidden">
             <Image
-              src="/はじめに.jpg"
+              src="/last-diet-intro.jpg"
               alt="Last Diet 表紙"
               fill
               className="object-cover"
@@ -44,7 +44,7 @@ export default function LastDietProject() {
         <section className="flex flex-col gap-6 px-0 pt-[30px] pb-[50px] md:pb-20 md:pr-[200px] lg:pr-[270px]">
           <div className="relative w-full aspect-[900/1359] rounded-[10px] overflow-hidden">
             <Image
-              src="/第1章.jpg"
+              src="/last-diet-chapter1.jpg"
               alt="Last Diet ページサンプル"
               fill
               className="object-cover"
