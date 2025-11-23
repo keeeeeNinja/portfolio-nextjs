@@ -183,7 +183,7 @@ export default function PortfolioProject() {
             </div>
             <div className="relative w-full aspect-square rounded-[4px] overflow-hidden">
               <Image
-                src="/ラストダイエット_thumb.png"
+                src="/last-diet-thumb.png"
                 alt="Last Diet サムネイル"
                 fill
                 className="object-cover"

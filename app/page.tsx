@@ -96,7 +96,7 @@ export default function Home() {
         {/* Image */}
         <div className="relative w-full aspect-square rounded-[4px] overflow-hidden md:flex-1">
           <Image
-            src="/ラストダイエット1.jpg"
+            src="/last-diet-home.jpg"
             alt="Last Diet"
             fill
             className="object-cover"
