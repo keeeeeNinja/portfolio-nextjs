@@ -109,7 +109,7 @@ export default function PortfolioProject() {
         </p>
 
         {/* Related Projects Grid */}
-        <div className="flex flex-col gap-12 md:flex-row md:gap-12">
+        <div className="flex flex-col gap-12 pb-[160px] md:flex-row md:gap-12">
           {/* Current Project Card */}
           <article className="flex flex-col gap-12 pt-[50px] border-t-[0.5px] border-[#ab0782] md:flex-1">
             <div className="flex flex-col gap-[19px] flex-1">
@@ -117,7 +117,7 @@ export default function PortfolioProject() {
                 Website
               </h3>
               <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#ab0782] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
-                Portfolio<br />Site
+                ポートフォリオ<br />サイト
               </p>
               <a
                 href="#top"
@@ -171,7 +171,7 @@ export default function PortfolioProject() {
                 Books
               </h3>
               <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#6e660a] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
-                Last Diet
+                ラスト<br />ダイエット
               </p>
               <a
                 href="/projects/last-diet"

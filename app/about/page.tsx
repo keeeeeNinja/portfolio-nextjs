@@ -9,10 +9,12 @@ export default function About() {
 
       {/* About me */}
       <section className="flex flex-col gap-[19px] pt-[30px] pb-[100px] md:pt-[200px]">
-        <div className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-black">
-          <p>During my time at Aetheria School of Visual Arts, I had the opportunity to intern at Lumina Creative Studio and The Terraform Interiors Collective. These experiences allowed me to see design in action, collaborating with talented professionals and contributing to real-world projects. I learned invaluable lessons about the creative process, from concept development to final execution.</p>
+        <div className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-black md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
+          <p>私はWebサイトのコーディングとWebライティングを行っています。HTML/CSS/JavaScriptを使用したレスポンシブデザインの実装と、読み手に伝わる文章の作成が得意です。</p>
           <p>&nbsp;</p>
-          <p>I thrive in collaborative environments, where ideas can bounce and evolve. I love the challenge of taking a concept and translating it into a compelling visual experience. Whether I'm sketching, photographing, or designing, I'm always searching for ways to connect with people on a deeper level through my work.</p>
+          <p>AIツールを活用した効率的な制作プロセスを取り入れており、品質を保ちながらスピード感のある納品を心がけています。</p>
+          <p>&nbsp;</p>
+          <p>このポートフォリオに掲載している作品は、すべて実際に公開・出版したものです。</p>
         </div>
       </section>
 
@@ -21,7 +23,7 @@ export default function About() {
         {/* Left column */}
         <div className="border-t border-[#4f4f4f]/30 py-10 lg:w-[565px]">
           <p className="font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] text-black">
-            Right now I am...
+            私について
           </p>
         </div>
 
@@ -29,32 +31,32 @@ export default function About() {
         <div className="flex flex-col flex-1">
           {/* Row 1 */}
           <div className="flex gap-[19px] border-t border-[#4f4f4f]/30 py-[30px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] text-black">
-            <p>asdf to:</p>
-            <p>Relationships by Haim</p>
+            <p>趣味:</p>
+            <p>釣り、キャンプ</p>
           </div>
 
           {/* Row 2 */}
           <div className="flex gap-[19px] border-t border-[#4f4f4f]/30 py-[30px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] text-black">
-            <p>Dreaming of:</p>
-            <p>Gohar World's dinner parties</p>
+            <p>好きな食べ物:</p>
+            <p>蕎麦</p>
           </div>
 
           {/* Row 3 */}
           <div className="flex gap-[19px] border-t border-[#4f4f4f]/30 py-[30px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] text-black">
-            <p>Eating at:</p>
-            <p>Mcdonald's</p>
+            <p>言語:</p>
+            <p>HTML / CSS / JavaScript / VBA</p>
           </div>
 
           {/* Row 4 */}
           <div className="flex gap-[19px] border-t border-[#4f4f4f]/30 py-[30px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] text-black">
-            <p>Training for:</p>
-            <p>The NYC Marathon</p>
+            <p>AI:</p>
+            <p>ChatGPT、Claudeを使用。Cursor + Codex CLI + Claude Codeでコーディング。仕様駆動開発とマルチエージェントを勉強中。</p>
           </div>
 
           {/* Image */}
           <div className="relative w-full aspect-square shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] overflow-hidden">
             <Image
-              src="/about-portrait.png"
+              src="/ころも.jpg"
               alt="Portrait of woman"
               fill
               className="object-cover"
@@ -66,33 +68,32 @@ export default function About() {
       {/* Explore More */}
       <section className="flex flex-col gap-12 pt-[30px] pb-0 border-t border-[#4f4f4f]/30">
         <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-black">
-          From graphic design to interior spaces, see the breadth of my creative explorations.
+          Webサイトから書籍まで、私の制作物をご覧ください。
         </p>
-        <h2 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] underline text-black">
-          More projects
-        </h2>
 
         {/* Projects Grid */}
-        <div className="flex flex-col gap-12 md:flex-row md:gap-12">
-          {/* Project 01 */}
-          <article className="flex flex-col gap-12 pt-[50px] border-t-[0.5px] border-[#ab0782] md:flex-1">
+        <div className="flex flex-col gap-12 pb-[160px] md:flex-row md:gap-12">
+          {/* Project 01 - Sweets */}
+          <article className="flex flex-col gap-12 pt-[50px] border-t-[0.5px] border-[#0034ad] md:flex-1">
             <div className="flex flex-col gap-[19px] flex-1">
-              <h3 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] underline text-[#ab0782]">
-                Artwork
+              <h3 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] underline text-[#0034ad]">
+                Website
               </h3>
-              <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#ab0782]">
-                Illustration<br />sketches
+              <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#0034ad] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
+                秋の人気<br />スイーツ特集
               </p>
-              <button className="mt-auto border border-[#ab0782] px-[10px] pt-1 pb-[7px] w-fit">
-                <span className="font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] text-[#ab0782]">
-                  Explore
-                </span>
-              </button>
+              <a
+                href="/projects/sweets"
+                className="mt-auto w-fit px-[10px] pt-1 pb-[7px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] border border-[#0034ad] transition-colors hover:bg-[#0034ad] hover:text-white"
+                aria-label="秋の人気スイーツ特集サイトの詳細を見る"
+              >
+                Explore
+              </a>
             </div>
             <div className="relative w-full aspect-square rounded-[4px] overflow-hidden">
               <Image
-                src="/explore1.png"
-                alt="Abstract painting illustration"
+                src="/SweetsSite_thumb2.jpg"
+                alt="秋の人気スイーツ特集サイトのサムネイル"
                 fill
                 className="object-cover"
               />
@@ -106,7 +107,7 @@ export default function About() {
                 Books
               </h3>
               <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#6e660a] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
-                Last Diet
+                ラスト<br />ダイエット
               </p>
               <a
                 href="/projects/last-diet"
@@ -126,25 +127,27 @@ export default function About() {
             </div>
           </article>
 
-          {/* Project 03 */}
-          <article className="flex flex-col gap-12 pt-[50px] border-t-[0.5px] border-[#0034ad] md:flex-1">
+          {/* Project 03 - Portfolio */}
+          <article className="flex flex-col gap-12 pt-[50px] border-t-[0.5px] border-[#ab0782] md:flex-1">
             <div className="flex flex-col gap-[19px] flex-1">
-              <h3 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] underline text-[#0034ad]">
-                Design
+              <h3 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] underline text-[#ab0782]">
+                Website
               </h3>
-              <p className="font-serif font-light text-[50px] leading-[1.2] tracking-[-2.25px] text-[#0034ad]">
-                Castro Capital branding
+              <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#ab0782] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
+                ポートフォリオ<br />サイト
               </p>
-              <button className="mt-auto border border-[#0034ad] px-[10px] pt-1 pb-[7px] w-fit">
-                <span className="font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] text-[#0034ad]">
-                  Explore
-                </span>
-              </button>
+              <a
+                href="/projects/portfolio"
+                className="mt-auto w-fit px-[10px] pt-1 pb-[7px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] border border-[#ab0782] transition-colors hover:bg-[#ab0782] hover:text-white"
+                aria-label="ポートフォリオサイトの詳細を見る"
+              >
+                Explore
+              </a>
             </div>
             <div className="relative w-full aspect-square rounded-[4px] overflow-hidden">
               <Image
-                src="/explore3.png"
-                alt="Castro Capital branding materials"
+                src="/Portfolio_thumb.jpg"
+                alt="ポートフォリオサイトのサムネイル"
                 fill
                 className="object-cover"
               />

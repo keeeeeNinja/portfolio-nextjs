@@ -64,7 +64,7 @@ export default function LastDietProject() {
       </main>
 
       {/* External Link Section */}
-      <section className="flex flex-col gap-12 px-0 pt-[30px] pb-0 lg:pr-[120px]">
+      <section className="flex flex-col gap-12 px-0 pt-[30px] pb-0">
         <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-black md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
           ラストダイエット
           <a
@@ -79,7 +79,7 @@ export default function LastDietProject() {
         </p>
 
         {/* Related Projects Grid */}
-        <div className="flex flex-col gap-12 md:flex-row md:gap-12">
+        <div className="flex flex-col gap-12 pb-[160px] md:flex-row md:gap-12">
           {/* Current Project Card */}
           <article className="flex flex-col gap-12 pt-[50px] border-t-[0.5px] border-[#6e660a] md:flex-1">
             <div className="flex flex-col gap-[19px] flex-1">
@@ -87,7 +87,7 @@ export default function LastDietProject() {
                 Books
               </h3>
               <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#6e660a] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
-                Last Diet
+                ラスト<br />ダイエット
               </p>
               <a
                 href="#top"
@@ -141,7 +141,7 @@ export default function LastDietProject() {
                 Website
               </h3>
               <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#ab0782] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
-                Portfolio Site
+                ポートフォリオサイト
               </p>
               <a
                 href="/projects/portfolio"

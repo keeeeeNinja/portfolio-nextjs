@@ -109,19 +109,19 @@ export default function Projects() {
         </p>
 
         {/* Related Projects Grid */}
-        <div className="flex flex-col gap-12 md:flex-row md:gap-12">
+        <div className="flex flex-col gap-12 pb-[160px] md:flex-row md:gap-12">
           {/* Current Project Card */}
-          <article className="flex flex-col gap-12 pt-[50px] border-t-[0.5px] border-[#ab0782] md:flex-1">
+          <article className="flex flex-col gap-12 pt-[50px] border-t-[0.5px] border-[#0034ad] md:flex-1">
             <div className="flex flex-col gap-[19px] flex-1">
-              <h3 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] text-[#ab0782] underline">
+              <h3 className="font-mono font-medium text-base leading-[1.03] tracking-[-0.72px] text-[#0034ad] underline">
                 Website
               </h3>
-              <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#ab0782] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
-                Autumn Sweets<br />Demo Site
+              <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#0034ad] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
+                秋の人気<br />スイーツ特集
               </p>
               <a
                 href="#top"
-                className="mt-auto w-fit px-[10px] pt-1 pb-[7px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] border border-[#ab0782] transition-colors hover:bg-[#ab0782] hover:text-white"
+                className="mt-auto w-fit px-[10px] pt-1 pb-[7px] font-mono font-normal text-base leading-[1.03] tracking-[-0.72px] border border-[#0034ad] transition-colors hover:bg-[#0034ad] hover:text-white"
                 aria-label="ページトップに戻る"
               >
                 Explore
@@ -144,7 +144,7 @@ export default function Projects() {
                 Books
               </h3>
               <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#6e660a] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
-                Last Diet
+                ラスト<br />ダイエット
               </p>
               <a
                 href="/projects/last-diet"
@@ -171,7 +171,7 @@ export default function Projects() {
                 Website
               </h3>
               <p className="font-serif font-light text-[28px] leading-[1.35] tracking-[-0.84px] text-[#ab0782] md:text-[36px] lg:text-[50px] lg:leading-[1.2] lg:tracking-[-2.25px]">
-                Portfolio<br />Site
+                ポートフォリオ<br />サイト
               </p>
               <a
                 href="/projects/portfolio"
