@@ -1,17 +1,216 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect, useRef } from "react";
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
+import {
+  gsap,
+  ScrollTrigger,
+  prefersReducedMotion,
+  motion,
+} from "../../utils/animations";
 
 export default function PortfolioProject() {
+  const headerRef = useRef<HTMLElement>(null);
+  const galleryRef = useRef<HTMLElement>(null);
+  const responsiveRef = useRef<HTMLElement>(null);
+  const externalLinkRef = useRef<HTMLElement>(null);
+  const relatedRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    if (prefersReducedMotion()) return;
+
+    // Header animation
+    if (headerRef.current) {
+      const label = headerRef.current.querySelector("[data-label]");
+      const title = headerRef.current.querySelector("h1");
+      const description = headerRef.current.querySelector("p");
+
+      gsap.fromTo(
+        label,
+        { opacity: 0, x: -20 },
+        {
+          opacity: 1,
+          x: 0,
+          duration: motion.duration.normal,
+          ease: motion.ease.default,
+        }
+      );
+
+      gsap.fromTo(
+        title,
+        { opacity: 0, y: motion.distance.small },
+        {
+          opacity: 1,
+          y: 0,
+          duration: motion.duration.slow,
+          delay: 0.15,
+          ease: motion.ease.default,
+        }
+      );
+
+      gsap.fromTo(
+        description,
+        { opacity: 0, y: motion.distance.small },
+        {
+          opacity: 1,
+          y: 0,
+          duration: motion.duration.normal,
+          delay: 0.3,
+          ease: motion.ease.default,
+        }
+      );
+    }
+
+    // Gallery images scroll animation
+    if (galleryRef.current) {
+      const sections = galleryRef.current.querySelectorAll("[data-gallery]");
+
+      sections.forEach((section, index) => {
+        const image = section.querySelector("[data-image]");
+        const caption = section.querySelector("p");
+
+        const direction = index % 2 === 0 ? 1 : -1;
+
+        gsap.fromTo(
+          image,
+          { opacity: 0, y: 40, x: direction * 20 },
+          {
+            opacity: 1,
+            y: 0,
+            x: 0,
+            duration: motion.duration.slow,
+            ease: motion.ease.default,
+            scrollTrigger: {
+              trigger: section,
+              start: "top 85%",
+              toggleActions: "play none none none",
+            },
+          }
+        );
+
+        gsap.fromTo(
+          caption,
+          { opacity: 0 },
+          {
+            opacity: 1,
+            duration: motion.duration.fast,
+            delay: 0.2,
+            ease: motion.ease.default,
+            scrollTrigger: {
+              trigger: section,
+              start: "top 85%",
+              toggleActions: "play none none none",
+            },
+          }
+        );
+      });
+    }
+
+    // Responsive section animation
+    if (responsiveRef.current) {
+      const label = responsiveRef.current.querySelector("span");
+      const title = responsiveRef.current.querySelector("h2");
+
+      gsap.fromTo(
+        label,
+        { opacity: 0, x: -15 },
+        {
+          opacity: 1,
+          x: 0,
+          duration: motion.duration.normal,
+          ease: motion.ease.default,
+          scrollTrigger: {
+            trigger: responsiveRef.current,
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+        }
+      );
+
+      gsap.fromTo(
+        title,
+        { opacity: 0, y: 20 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: motion.duration.normal,
+          delay: 0.1,
+          ease: motion.ease.default,
+          scrollTrigger: {
+            trigger: responsiveRef.current,
+            start: "top 85%",
+            toggleActions: "play none none none",
+          },
+        }
+      );
+    }
+
+    // External link section animation
+    if (externalLinkRef.current) {
+      gsap.fromTo(
+        externalLinkRef.current,
+        { opacity: 0, y: 20 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: motion.duration.normal,
+          ease: motion.ease.default,
+          scrollTrigger: {
+            trigger: externalLinkRef.current,
+            start: "top 90%",
+            toggleActions: "play none none none",
+          },
+        }
+      );
+    }
+
+    // Related projects animation
+    if (relatedRef.current) {
+      const cards = relatedRef.current.querySelectorAll("article");
+
+      cards.forEach((card, index) => {
+        gsap.fromTo(
+          card,
+          { opacity: 0, y: 30 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: motion.duration.normal,
+            delay: index * motion.stagger.slow,
+            ease: motion.ease.default,
+            scrollTrigger: {
+              trigger: relatedRef.current,
+              start: "top 85%",
+              toggleActions: "play none none none",
+            },
+          }
+        );
+      });
+    }
+
+    // Cleanup
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, []);
+
   return (
     <div id="top" className="min-h-screen bg-[#f8f6f3]">
       <div className="px-[50px] max-w-[1280px] mx-auto">
         <Navigation />
 
       {/* Page Header */}
-      <header className="flex flex-col gap-6 pt-16 pb-20 pr-0 md:pt-32 md:pb-24 lg:max-w-[900px]">
+      <header
+        ref={headerRef}
+        className="flex flex-col gap-6 pt-16 pb-20 pr-0 md:pt-32 md:pb-24 lg:max-w-[900px]"
+      >
         <div className="flex flex-col gap-3 text-[#ab0782]">
-          <span className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] uppercase">
+          <span
+            data-label
+            className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] uppercase"
+          >
             Website
           </span>
           <h1 className="font-serif font-normal text-[32px] leading-[1.2] tracking-[-0.5px] md:text-[44px] lg:text-[56px]">
@@ -24,10 +223,16 @@ export default function PortfolioProject() {
       </header>
 
       {/* Project Gallery */}
-      <main className="flex flex-col gap-20 pb-20 md:pb-32">
+      <main ref={galleryRef} className="flex flex-col gap-20 pb-20 md:pb-32">
         {/* Gallery Image 1 */}
-        <section className="flex flex-col gap-3 px-0 md:px-16 lg:pl-32 lg:pr-8">
-          <div className="relative w-full aspect-[667/484] rounded-lg overflow-hidden shadow-lg">
+        <section
+          data-gallery
+          className="flex flex-col gap-3 px-0 md:px-16 lg:pl-32 lg:pr-8"
+        >
+          <div
+            data-image
+            className="relative w-full aspect-[667/484] rounded-lg overflow-hidden shadow-lg"
+          >
             <Image
               src="/Home2.jpg"
               alt="ポートフォリオサイトのホーム画面"
@@ -41,8 +246,14 @@ export default function PortfolioProject() {
         </section>
 
         {/* Gallery Image 2 */}
-        <section className="flex flex-col gap-3 px-0 md:pr-32 lg:pr-48">
-          <div className="relative w-full aspect-[910/553] rounded-lg overflow-hidden shadow-lg">
+        <section
+          data-gallery
+          className="flex flex-col gap-3 px-0 md:pr-32 lg:pr-48"
+        >
+          <div
+            data-image
+            className="relative w-full aspect-[910/553] rounded-lg overflow-hidden shadow-lg"
+          >
             <Image
               src="/Section_About3.jpg"
               alt="ポートフォリオサイトのAboutセクション"
@@ -56,8 +267,14 @@ export default function PortfolioProject() {
         </section>
 
         {/* Gallery Image 3 */}
-        <section className="flex flex-col gap-3 px-0 md:pl-32 lg:pl-48">
-          <div className="relative w-full aspect-[980/758] rounded-lg overflow-hidden shadow-lg">
+        <section
+          data-gallery
+          className="flex flex-col gap-3 px-0 md:pl-32 lg:pl-48"
+        >
+          <div
+            data-image
+            className="relative w-full aspect-[980/758] rounded-lg overflow-hidden shadow-lg"
+          >
             <Image
               src="/Work.jpg"
               alt="ポートフォリオサイトの詳細ページ"
@@ -71,7 +288,10 @@ export default function PortfolioProject() {
         </section>
 
         {/* Responsive Design Description */}
-        <section className="flex flex-col gap-6 pr-0 lg:pr-24 lg:max-w-[800px]">
+        <section
+          ref={responsiveRef}
+          className="flex flex-col gap-6 pr-0 lg:pr-24 lg:max-w-[800px]"
+        >
           <span className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] text-[#666] uppercase">
             Responsive
           </span>
@@ -81,8 +301,11 @@ export default function PortfolioProject() {
         </section>
 
         {/* Gallery Image: Mobile Version */}
-        <section className="flex flex-col gap-3 lg:pr-24">
-          <div className="relative w-full aspect-[1060/640] rounded-lg overflow-hidden shadow-lg">
+        <section data-gallery className="flex flex-col gap-3 lg:pr-24">
+          <div
+            data-image
+            className="relative w-full aspect-[1060/640] rounded-lg overflow-hidden shadow-lg"
+          >
             <Image
               src="/Portofolio_SP版5.jpg"
               alt="ポートフォリオサイトのスマートフォン版画面"
@@ -97,7 +320,10 @@ export default function PortfolioProject() {
       </main>
 
       {/* External Link Section */}
-      <section className="flex flex-col gap-6 px-0 pt-10 pb-16 border-t border-[#ccc]">
+      <section
+        ref={externalLinkRef}
+        className="flex flex-col gap-6 px-0 pt-10 pb-16 border-t border-[#ccc]"
+      >
         <span className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] text-[#666] uppercase">
           Live Site
         </span>
@@ -118,7 +344,10 @@ export default function PortfolioProject() {
       </section>
 
       {/* Related Projects */}
-      <section className="flex flex-col gap-8 pt-10 pb-0 border-t border-[#ccc]">
+      <section
+        ref={relatedRef}
+        className="flex flex-col gap-8 pt-10 pb-0 border-t border-[#ccc]"
+      >
         <div className="flex flex-col gap-2">
           <span className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] text-[#666] uppercase">
             More Works

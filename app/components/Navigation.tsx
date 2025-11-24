@@ -2,13 +2,35 @@
 
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useEffect, useRef } from "react";
+import { gsap, staggerFadeInUp, prefersReducedMotion, motion } from "../utils/animations";
 
 export default function Navigation() {
   const pathname = usePathname();
+  const navLinksRef = useRef<HTMLDivElement>(null);
 
   // アクティブ状態の判定
   const isHome = pathname === "/" || pathname.startsWith("/projects");
   const isAbout = pathname === "/about";
+
+  // ナビリンクのstaggerフェードイン
+  useEffect(() => {
+    if (prefersReducedMotion() || !navLinksRef.current) return;
+
+    const links = navLinksRef.current.querySelectorAll("a");
+    gsap.fromTo(
+      links,
+      { opacity: 0, y: 10 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: motion.duration.fast,
+        stagger: motion.stagger.fast,
+        ease: motion.ease.default,
+        delay: 0.2,
+      }
+    );
+  }, []);
 
   return (
     <nav className="flex flex-row items-center justify-between gap-5 -mx-[50px] px-5 py-4 border-b border-[#e5e5e5] md:px-12 md:py-5 lg:px-[50px]">
@@ -34,7 +56,7 @@ export default function Navigation() {
       </a>
 
       {/* Navigation Links */}
-      <div className="flex items-center gap-1 md:gap-2">
+      <div ref={navLinksRef} className="flex items-center gap-1 md:gap-2">
         <a
           href="/"
           className={`px-3 py-1.5 font-mono text-[14px] tracking-[0.3px] rounded-md transition-colors ${
