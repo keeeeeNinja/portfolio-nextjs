@@ -390,6 +390,38 @@ export default function About() {
               />
             </div>
           </article>
+
+          {/* Project 04 - Work Redesign */}
+          <article
+            data-work-card
+            className="flex flex-col gap-6 pt-6 border-t border-[#0f766e] md:flex-1"
+          >
+            <div className="flex flex-col gap-3 flex-1">
+              <span className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] text-[#0f766e] uppercase">
+                SEO Writing & LP
+              </span>
+              <h3 className="font-serif font-normal text-[18px] leading-[1.3] tracking-[-0.3px] text-[#0f766e] md:text-[20px] lg:text-[24px]">
+                仕事のやり方
+                <br />
+                再設計
+              </h3>
+              <a
+                href="/projects/work-redesign"
+                className="mt-auto w-fit px-3 py-1.5 font-mono text-[12px] leading-[1.2] tracking-[0.5px] border border-[#0f766e] text-[#0f766e] rounded-md transition-colors hover:bg-[#0f766e] hover:text-white"
+                aria-label="仕事のやり方再設計の詳細を見る"
+              >
+                Explore →
+              </a>
+            </div>
+            <div className="relative w-full aspect-square rounded-lg overflow-hidden">
+              <Image
+                src="/Working_LP2.webp"
+                alt="仕事のやり方再設計のサムネイル"
+                fill
+                className="object-cover transition-transform duration-300 hover:scale-[1.03]"
+              />
+            </div>
+          </article>
         </div>
       </section>
 

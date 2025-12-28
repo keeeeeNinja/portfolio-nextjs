@@ -122,14 +122,14 @@ export default function Home() {
         {/* Project Card 0 - New LP (Placeholder) */}
         <section
           data-card
-          className="flex flex-col gap-8 px-0 pt-10 pb-12 border-t border-[#0034ad] md:flex-row md:gap-16 md:items-center"
+          className="flex flex-col gap-8 px-0 pt-10 pb-12 border-t border-[#0f766e] md:flex-row md:gap-16 md:items-center"
         >
           {/* Text Content */}
           <div data-text className="flex flex-col gap-5 md:flex-1">
-            <span className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] text-[#0034ad] uppercase">
+            <span className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] text-[#0f766e] uppercase">
               SEO Writing & LP
             </span>
-            <h2 className="font-serif font-normal text-[28px] leading-[1.2] tracking-[-0.5px] text-[#0034ad] md:text-[32px] lg:text-[44px]">
+            <h2 className="font-serif font-normal text-[40px] leading-[1.2] tracking-[-0.5px] text-[#0f766e]">
               頑張っているのに成果が出ない人のための"仕事のやり方再設計"
             </h2>
             <p className="font-serif font-light text-[16px] leading-[1.7] text-[#666] max-w-[400px]">
@@ -137,7 +137,7 @@ export default function Home() {
             </p>
             <a
               href="/projects/work-redesign"
-              className="mt-4 w-fit px-5 py-2.5 font-mono text-[13px] leading-[1.2] tracking-[0.5px] bg-[#0034ad] text-white rounded-lg transition-all hover:bg-[#002080] hover:shadow-lg"
+              className="mt-4 w-fit px-5 py-2.5 font-mono text-[13px] leading-[1.2] tracking-[0.5px] bg-[#0f766e] text-white rounded-lg transition-all hover:bg-[#0d5f58] hover:shadow-lg"
               aria-label="頑張っているのに成果が出ない人のための仕事のやり方再設計の詳細を見る"
             >
               Explore →

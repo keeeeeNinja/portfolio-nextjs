@@ -211,7 +211,7 @@ export default function Projects() {
         ref={headerRef}
         className="flex flex-col gap-6 pt-16 pb-20 pr-0 md:pt-32 md:pb-24 lg:max-w-[900px]"
       >
-        <div className="flex flex-col gap-3 text-[#0034ad]">
+        <div className="flex flex-col gap-3 text-[#0f766e]">
           <span
             data-label
             className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] uppercase"
@@ -369,7 +369,7 @@ export default function Projects() {
             href="https://work-redesign-lp.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-fit px-5 py-2.5 font-mono text-[13px] leading-[1.2] tracking-[0.5px] bg-[#0034ad] text-white rounded-lg transition-all hover:bg-[#002080] hover:shadow-lg"
+            className="w-fit px-5 py-2.5 font-mono text-[13px] leading-[1.2] tracking-[0.5px] bg-[#0f766e] text-white rounded-lg transition-all hover:bg-[#0d5f58] hover:shadow-lg"
             aria-label="仕事のやり方再設計LPを別タブで開く"
           >
             サイトを見る →
@@ -394,12 +394,12 @@ export default function Projects() {
         {/* Related Projects Grid */}
         <div className="flex flex-col gap-6 pb-32 md:flex-row md:gap-6">
           {/* Current Project Card - More subtle */}
-          <article className="flex flex-col gap-4 pt-6 border-t border-[#0034ad]/30 md:flex-1">
+          <article className="flex flex-col gap-4 pt-6 border-t border-[#0f766e]/30 md:flex-1">
             <div className="flex flex-col gap-2 flex-1">
-              <span className="font-mono text-[11px] tracking-[0.5px] text-[#0034ad]/60 uppercase">
+              <span className="font-mono text-[11px] tracking-[0.5px] text-[#0f766e]/60 uppercase">
                 SEO Writing & LP
               </span>
-              <h3 className="font-serif font-normal text-[16px] leading-[1.3] tracking-[-0.3px] text-[#0034ad]/60 md:text-[18px]">
+              <h3 className="font-serif font-normal text-[16px] leading-[1.3] tracking-[-0.3px] text-[#0f766e]/60 md:text-[18px]">
                 仕事のやり方再設計
               </h3>
               <span className="mt-auto font-mono text-[11px] tracking-[0.5px] text-[#999]">
