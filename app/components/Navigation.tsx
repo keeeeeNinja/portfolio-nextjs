@@ -12,6 +12,7 @@ export default function Navigation() {
   // アクティブ状態の判定
   const isHome = pathname === "/" || pathname.startsWith("/projects");
   const isAbout = pathname === "/about";
+  const isContact = pathname === "/contact";
 
   // ナビリンクのstaggerフェードイン
   useEffect(() => {
@@ -80,8 +81,12 @@ export default function Navigation() {
 
         {/* CTA Button - Contact */}
         <a
-          href="mailto:allfork2011@gmail.com"
-          className="ml-2 px-4 py-1.5 font-mono text-[13px] tracking-[0.3px] border border-[#ab0782] text-[#ab0782] rounded-full transition-all hover:bg-[#ab0782] hover:text-white hover:shadow-sm"
+          href="/contact"
+          className={`ml-2 px-4 py-1.5 font-mono text-[13px] tracking-[0.3px] border border-[#ab0782] rounded-full transition-all ${
+            isContact
+              ? "bg-[#ab0782] text-white"
+              : "text-[#ab0782] hover:bg-[#ab0782] hover:text-white hover:shadow-sm"
+          }`}
         >
           Contact
         </a>
