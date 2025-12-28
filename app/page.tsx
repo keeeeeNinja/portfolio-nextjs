@@ -119,6 +119,45 @@ export default function Home() {
 
       {/* Project Cards Container */}
       <div ref={cardsRef}>
+        {/* Project Card 0 - New LP (Placeholder) */}
+        <section
+          data-card
+          className="flex flex-col gap-8 px-0 pt-10 pb-12 border-t border-[#0034ad] md:flex-row md:gap-16 md:items-center"
+        >
+          {/* Text Content */}
+          <div data-text className="flex flex-col gap-5 md:flex-1">
+            <span className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] text-[#0034ad] uppercase">
+              SEO Writing & LP
+            </span>
+            <h2 className="font-serif font-normal text-[28px] leading-[1.2] tracking-[-0.5px] text-[#0034ad] md:text-[32px] lg:text-[44px]">
+              頑張っているのに成果が出ない人のための"仕事のやり方再設計"
+            </h2>
+            <p className="font-serif font-light text-[16px] leading-[1.7] text-[#666] max-w-[400px]">
+              SEO記事で"仕事の再設計"の考え方を整理し、LPで「自分の場合の直しどころ」を見える化して次の一手へつなぐ一連の導線を制作。記事執筆（SEOライティング）／LP構成・文章設計／フロント実装まで担当しました。
+            </p>
+            <a
+              href="/projects/work-redesign"
+              className="mt-4 w-fit px-5 py-2.5 font-mono text-[13px] leading-[1.2] tracking-[0.5px] bg-[#0034ad] text-white rounded-lg transition-all hover:bg-[#002080] hover:shadow-lg"
+              aria-label="頑張っているのに成果が出ない人のための仕事のやり方再設計の詳細を見る"
+            >
+              Explore →
+            </a>
+          </div>
+
+          {/* Image */}
+          <div
+            data-image
+            className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden md:flex-1 md:max-w-[500px]"
+          >
+            <Image
+              src="/Working_LP2.webp"
+              alt="頑張っているのに成果が出ない人のための仕事のやり方再設計のLP画像"
+              fill
+              className="object-cover rounded-2xl transition-transform duration-300 hover:scale-[1.03]"
+            />
+          </div>
+        </section>
+
         {/* Project Card 1 - Sweets */}
         <section
           data-card
