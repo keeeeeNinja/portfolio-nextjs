@@ -469,6 +469,33 @@ export default function Projects() {
               />
             </div>
           </article>
+
+          {/* Project 04 - Autumn Sweets */}
+          <article className="flex flex-col gap-4 pt-6 border-t border-[#0034ad] md:flex-1">
+            <div className="flex flex-col gap-2 flex-1">
+              <span className="font-mono text-[11px] tracking-[0.5px] text-[#0034ad] uppercase">
+                Website
+              </span>
+              <h3 className="font-serif font-normal text-[16px] leading-[1.3] tracking-[-0.3px] text-[#0034ad] md:text-[18px]">
+                秋の人気スイーツ特集
+              </h3>
+              <a
+                href="/projects/sweets"
+                className="mt-auto w-fit px-3 py-1.5 font-mono text-[11px] leading-[1.2] tracking-[0.5px] border border-[#0034ad] text-[#0034ad] rounded-md transition-colors hover:bg-[#0034ad] hover:text-white"
+                aria-label="秋の人気スイーツ特集サイトの詳細を見る"
+              >
+                Explore →
+              </a>
+            </div>
+            <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
+              <Image
+                src="/SweetsSite_thumb2.jpg"
+                alt="秋の人気スイーツ特集サイトのサムネイル"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </article>
         </div>
       </section>
 
