@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+import ReactMarkdown from "react-markdown";
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import {
@@ -224,58 +225,104 @@ export default function LastDietProject() {
 
       {/* Project Gallery */}
       <main ref={galleryRef} className="flex flex-col gap-20 pb-20 md:pb-32">
-        {/* Gallery Image 1 */}
+        {/* Article Section 1: Ch02 */}
         <section
           data-gallery
-          className="flex flex-col gap-3 px-0 md:px-16 lg:pl-32 lg:pr-8"
+          className="flex flex-col gap-6 px-0 md:px-16 lg:pl-32 lg:pr-8"
         >
+          <span className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] text-[#666] uppercase">
+            Chapter 02
+          </span>
           <div
             data-image
-            className="relative w-full aspect-[900/1256] rounded-lg overflow-hidden shadow-lg"
+            className="prose prose-lg max-w-none"
           >
-            <Image
-              src="/last-diet-intro.jpg"
-              alt="Last Diet 表紙"
-              fill
-              className="object-cover"
-            />
+            <ReactMarkdown
+              components={{
+                h2: ({ children }) => (
+                  <h2 className="font-serif font-normal text-[28px] leading-[1.3] tracking-[-0.5px] text-[#111] md:text-[32px] lg:text-[36px] mt-8 mb-4">
+                    {children}
+                  </h2>
+                ),
+                h3: ({ children }) => (
+                  <h3 className="font-serif font-normal text-[22px] leading-[1.4] tracking-[-0.3px] text-[#333] md:text-[24px] lg:text-[28px] mt-6 mb-3">
+                    {children}
+                  </h3>
+                ),
+                p: ({ children }) => (
+                  <p className="font-serif font-light text-[16px] leading-[1.8] text-[#444] mb-4 md:text-[18px]">
+                    {children}
+                  </p>
+                ),
+              }}
+            >
+              {`## 仕組みが分かれば焦りが減る
+
+「なんで痩せないんだろう」「頑張ってるのに結果が出ない」。そんな思いを抱えていませんか？体脂肪が減る仕組みを知ることで、焦りや不安が少し軽くなります。完璧な理解は必要ありません。大まかな方向性が分かれば十分です。
+
+### なぜ「運動」より「基礎代謝」なのか
+
+体脂肪を落とすのに大切なのは、運動よりも**基礎代謝を安定させること**です。これは私が1年間の人体実験を通じて最も確信を持って伝えたいことの一つです。
+
+基礎代謝がないと、体脂肪をエネルギーに変えようとしないので、体脂肪は減りません。基礎代謝を上げるにはやっぱり食べることです。矛盾しているように見えますが、食事の管理をしていけば可能ですのであまり難しく考えず、自分の体に実験しながら自分の身体を知っていってください。`}
+            </ReactMarkdown>
           </div>
-          <p className="font-mono text-[12px] tracking-[0.5px] text-[#999] uppercase mt-2">
-            はじめに
-          </p>
         </section>
 
-        {/* Gallery Image 2 */}
+        {/* Article Section 2: Ch07 */}
         <section
           data-gallery
-          className="flex flex-col gap-3 px-0 md:pr-32 lg:pr-48"
+          className="flex flex-col gap-6 px-0 md:pr-32 lg:pr-48"
         >
+          <span className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] text-[#666] uppercase">
+            Chapter 07
+          </span>
           <div
             data-image
-            className="relative w-full aspect-[900/1359] rounded-lg overflow-hidden shadow-lg"
+            className="prose prose-lg max-w-none"
           >
-            <Image
-              src="/last-diet-chapter1.jpg"
-              alt="Last Diet ページサンプル"
-              fill
-              className="object-cover"
-            />
+            <ReactMarkdown
+              components={{
+                h2: ({ children }) => (
+                  <h2 className="font-serif font-normal text-[28px] leading-[1.3] tracking-[-0.5px] text-[#111] md:text-[32px] lg:text-[36px] mt-8 mb-4">
+                    {children}
+                  </h2>
+                ),
+                h3: ({ children }) => (
+                  <h3 className="font-serif font-normal text-[22px] leading-[1.4] tracking-[-0.3px] text-[#333] md:text-[24px] lg:text-[28px] mt-6 mb-3">
+                    {children}
+                  </h3>
+                ),
+                p: ({ children }) => (
+                  <p className="font-serif font-light text-[16px] leading-[1.8] text-[#444] mb-4 md:text-[18px]">
+                    {children}
+                  </p>
+                ),
+              }}
+            >
+              {`## 続かないのは意志力のせいじゃない
+
+「今度こそ続けよう」と決意しても、気づけば元の生活に戻ってしまう。モチベーションが続かない。自分との約束を守れない。そんな経験、ありませんか？
+
+この章でお伝えしたいのは、習慣化は意志力ではなく仕組みで支えるものだということです。ズボラでも続く環境、緩くて具体的なマイルール、自分を褒めるごほうび設計。そして週1回の見直しで微調整していく。
+
+### 緩くて具体的なマイルール
+
+記録はその時の状態を認識するものだけでなく、未来の自分への比較対象ですので本来の使い方は、1ヶ月前何kgだったかが、大切なんだと思います。体重計に乗ったら増えているかもしれないのであんまり乗りたくないと思う方もいるかもしれませんが、未来の自分に見せるものなので今の体重はあんまり気にしなくていいですよとお伝えしたいですね。`}
+            </ReactMarkdown>
           </div>
-          <p className="font-mono text-[12px] tracking-[0.5px] text-[#999] uppercase mt-2">
-            ページサンプル
-          </p>
         </section>
 
         {/* Description */}
         <section
           ref={aboutRef}
-          className="flex flex-col gap-6 pr-0 lg:pr-24 lg:max-w-[800px]"
+          className="flex flex-col gap-6 pr-0 lg:pr-24"
         >
           <span className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] text-[#666] uppercase">
             About
           </span>
           <h2 className="font-serif font-normal text-[28px] leading-[1.3] tracking-[-0.5px] text-[#111] md:text-[32px] lg:text-[40px]">
-            ラストダイエットは、食生活を整える長期的なダイエットの紹介です。
+            ラストダイエットは、<br />食生活を整える長期的なダイエットの紹介です。
           </h2>
         </section>
       </main>
@@ -371,17 +418,17 @@ export default function LastDietProject() {
           </article>
 
           {/* Project 03 - Portfolio */}
-          <article className="flex flex-col gap-4 pt-6 border-t border-[#ab0782] md:flex-1">
+          <article className="flex flex-col gap-4 pt-6 border-t border-[#0034ad] md:flex-1">
             <div className="flex flex-col gap-2 flex-1">
-              <span className="font-mono text-[11px] tracking-[0.5px] text-[#ab0782] uppercase">
+              <span className="font-mono text-[11px] tracking-[0.5px] text-[#0034ad] uppercase">
                 Website
               </span>
-              <h3 className="font-serif font-normal text-[16px] leading-[1.3] tracking-[-0.3px] text-[#ab0782] md:text-[18px]">
+              <h3 className="font-serif font-normal text-[16px] leading-[1.3] tracking-[-0.3px] text-[#0034ad] md:text-[18px]">
                 ポートフォリオサイト
               </h3>
               <a
                 href="/projects/portfolio"
-                className="mt-auto w-fit px-3 py-1.5 font-mono text-[11px] leading-[1.2] tracking-[0.5px] border border-[#ab0782] text-[#ab0782] rounded-md transition-colors hover:bg-[#ab0782] hover:text-white"
+                className="mt-auto w-fit px-3 py-1.5 font-mono text-[11px] leading-[1.2] tracking-[0.5px] border border-[#0034ad] text-[#0034ad] rounded-md transition-colors hover:bg-[#0034ad] hover:text-white"
                 aria-label="ポートフォリオサイトの詳細を見る"
               >
                 Explore →

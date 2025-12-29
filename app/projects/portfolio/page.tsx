@@ -206,7 +206,7 @@ export default function PortfolioProject() {
         ref={headerRef}
         className="flex flex-col gap-6 pt-16 pb-20 pr-0 md:pt-32 md:pb-24 lg:max-w-[900px]"
       >
-        <div className="flex flex-col gap-3 text-[#ab0782]">
+        <div className="flex flex-col gap-3 text-[#0034ad]">
           <span
             data-label
             className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] uppercase"
@@ -234,10 +234,10 @@ export default function PortfolioProject() {
             className="relative w-full aspect-[667/484] rounded-lg overflow-hidden shadow-lg"
           >
             <Image
-              src="/Home2.jpg"
+              src="/hinata02.webp"
               alt="ポートフォリオサイトのホーム画面"
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
           <p className="font-mono text-[12px] tracking-[0.5px] text-[#999] uppercase mt-2">
@@ -255,10 +255,10 @@ export default function PortfolioProject() {
             className="relative w-full aspect-[910/553] rounded-lg overflow-hidden shadow-lg"
           >
             <Image
-              src="/Section_About3.jpg"
+              src="/hinata03.webp"
               alt="ポートフォリオサイトのAboutセクション"
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
           <p className="font-mono text-[12px] tracking-[0.5px] text-[#999] uppercase mt-2">
@@ -276,7 +276,7 @@ export default function PortfolioProject() {
             className="relative w-full aspect-[980/758] rounded-lg overflow-hidden shadow-lg"
           >
             <Image
-              src="/Work.jpg"
+              src="/hinata04.webp"
               alt="ポートフォリオサイトの詳細ページ"
               fill
               className="object-cover"
@@ -290,7 +290,7 @@ export default function PortfolioProject() {
         {/* Responsive Design Description */}
         <section
           ref={responsiveRef}
-          className="flex flex-col gap-6 pr-0 lg:pr-24 lg:max-w-[800px]"
+          className="flex flex-col gap-6 pr-0 lg:pr-24"
         >
           <span className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] text-[#666] uppercase">
             Responsive
@@ -307,7 +307,7 @@ export default function PortfolioProject() {
             className="relative w-full aspect-[1060/640] rounded-lg overflow-hidden shadow-lg"
           >
             <Image
-              src="/Portofolio_SP版5.jpg"
+              src="/hinata055.webp"
               alt="ポートフォリオサイトのスマートフォン版画面"
               fill
               className="object-cover"
@@ -332,10 +332,10 @@ export default function PortfolioProject() {
             ポートフォリオサイト
           </p>
           <a
-            href="https://portfolio-site-xi-tan.vercel.app/"
+            href="https://hinataninjaportfoliosite.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-fit px-5 py-2.5 font-mono text-[13px] leading-[1.2] tracking-[0.5px] bg-[#ab0782] text-white rounded-lg transition-all hover:bg-[#8a0668] hover:shadow-lg"
+            className="w-fit px-5 py-2.5 font-mono text-[13px] leading-[1.2] tracking-[0.5px] bg-[#0034ad] text-white rounded-lg transition-all hover:bg-[#002080] hover:shadow-lg"
             aria-label="ポートフォリオサイトを別タブで開く"
           >
             サイトを見る →
@@ -360,12 +360,12 @@ export default function PortfolioProject() {
         {/* Related Projects Grid */}
         <div className="flex flex-col gap-6 pb-32 md:flex-row md:gap-6">
           {/* Current Project Card - More subtle */}
-          <article className="flex flex-col gap-4 pt-6 border-t border-[#ab0782]/30 md:flex-1">
+          <article className="flex flex-col gap-4 pt-6 border-t border-[#0034ad]/30 md:flex-1">
             <div className="flex flex-col gap-2 flex-1">
-              <span className="font-mono text-[11px] tracking-[0.5px] text-[#ab0782]/60 uppercase">
+              <span className="font-mono text-[11px] tracking-[0.5px] text-[#0034ad]/60 uppercase">
                 Website
               </span>
-              <h3 className="font-serif font-normal text-[16px] leading-[1.3] tracking-[-0.3px] text-[#ab0782]/60 md:text-[18px]">
+              <h3 className="font-serif font-normal text-[16px] leading-[1.3] tracking-[-0.3px] text-[#0034ad]/60 md:text-[18px]">
                 ポートフォリオサイト
               </h3>
               <span className="mt-auto font-mono text-[11px] tracking-[0.5px] text-[#999]">
@@ -374,7 +374,7 @@ export default function PortfolioProject() {
             </div>
             <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden opacity-60">
               <Image
-                src="/Portfolio_thumb.jpg"
+                src="/hinata06.webp"
                 alt="ポートフォリオサイトのサムネイル"
                 fill
                 className="object-cover"

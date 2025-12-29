@@ -210,7 +210,7 @@ export default function Projects() {
         ref={headerRef}
         className="flex flex-col gap-6 pt-16 pb-20 pr-0 md:pt-32 md:pb-24 lg:max-w-[900px]"
       >
-        <div className="flex flex-col gap-3 text-[#0034ad]">
+        <div className="flex flex-col gap-3 text-[#ab0782]">
           <span
             data-label
             className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] uppercase"
@@ -238,7 +238,7 @@ export default function Projects() {
             className="relative w-full aspect-[900/565] rounded-lg overflow-hidden shadow-lg"
           >
             <Image
-              src="/秋の実りを味わう2.jpg"
+              src="/autumn02.webp"
               alt="秋の実りを味わうスイーツセクション"
               fill
               className="object-cover"
@@ -259,7 +259,7 @@ export default function Projects() {
             className="relative w-full aspect-[920/660] rounded-lg overflow-hidden shadow-lg"
           >
             <Image
-              src="/誰もが愛する王道の甘さ3.jpg"
+              src="/autumn03.webp"
               alt="誰もが愛する王道の甘さスイーツセクション"
               fill
               className="object-cover"
@@ -280,7 +280,7 @@ export default function Projects() {
             className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-lg"
           >
             <Image
-              src="/季節の新作2.jpg"
+              src="/autumn04.webp"
               alt="季節の新作スイーツセクション"
               fill
               className="object-cover"
@@ -294,7 +294,7 @@ export default function Projects() {
         {/* Responsive Design Description */}
         <section
           ref={responsiveRef}
-          className="flex flex-col gap-6 pr-0 lg:pr-24 lg:max-w-[800px]"
+          className="flex flex-col gap-6 pr-0 lg:pr-24"
         >
           <span className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] text-[#666] uppercase">
             Responsive
@@ -311,7 +311,7 @@ export default function Projects() {
             className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-lg"
           >
             <Image
-              src="/SP版3.jpg"
+              src="/autumn05.webp"
               alt="秋の人気スイーツ特集サイトのスマートフォン版画面"
               fill
               className="object-cover"
@@ -339,7 +339,7 @@ export default function Projects() {
             href="https://autumn-sweets.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-fit px-5 py-2.5 font-mono text-[13px] leading-[1.2] tracking-[0.5px] bg-[#0034ad] text-white rounded-lg transition-all hover:bg-[#002080] hover:shadow-lg"
+            className="w-fit px-5 py-2.5 font-mono text-[13px] leading-[1.2] tracking-[0.5px] bg-[#ab0782] text-white rounded-lg transition-all hover:bg-[#8a0668] hover:shadow-lg"
             aria-label="秋の人気スイーツ特集サイトを別タブで開く"
           >
             サイトを見る →
@@ -364,12 +364,12 @@ export default function Projects() {
         {/* Related Projects Grid */}
         <div className="flex flex-col gap-6 pb-32 md:flex-row md:gap-6">
           {/* Current Project Card - More subtle */}
-          <article className="flex flex-col gap-4 pt-6 border-t border-[#0034ad]/30 md:flex-1">
+          <article className="flex flex-col gap-4 pt-6 border-t border-[#ab0782]/30 md:flex-1">
             <div className="flex flex-col gap-2 flex-1">
-              <span className="font-mono text-[11px] tracking-[0.5px] text-[#0034ad]/60 uppercase">
+              <span className="font-mono text-[11px] tracking-[0.5px] text-[#ab0782]/60 uppercase">
                 Website
               </span>
-              <h3 className="font-serif font-normal text-[16px] leading-[1.3] tracking-[-0.3px] text-[#0034ad]/60 md:text-[18px]">
+              <h3 className="font-serif font-normal text-[16px] leading-[1.3] tracking-[-0.3px] text-[#ab0782]/60 md:text-[18px]">
                 秋の人気スイーツ特集
               </h3>
               <span className="mt-auto font-mono text-[11px] tracking-[0.5px] text-[#999]">
@@ -378,7 +378,7 @@ export default function Projects() {
             </div>
             <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden opacity-60">
               <Image
-                src="/Sweets_thumb.jpg"
+                src="/autumn06.webp"
                 alt="秋の人気スイーツ特集デモサイトのサムネイル"
                 fill
                 className="object-cover"
