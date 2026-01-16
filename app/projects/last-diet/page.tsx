@@ -494,6 +494,30 @@ export default function LastDietProject() {
               />
             </div>
           </article>
+
+          {/* Project 06 - Writing 5000 */}
+          <article className="flex flex-col gap-3 pt-6 border-t border-[#6366F1] md:w-[calc(50%-8px)] lg:flex-1">
+            <div className="flex flex-col gap-2 flex-1">
+              <span className="font-mono text-[11px] tracking-[0.5px] text-[#6366F1] uppercase">
+                Writing
+              </span>
+              <h3 className="font-serif font-normal text-[14px] leading-[1.3] tracking-[-0.3px] text-[#6366F1] md:text-[16px]">
+                Webライティング
+              </h3>
+              <a
+                href="/projects/writing-5000"
+                className="mt-auto w-fit px-2 py-1 font-mono text-[10px] leading-[1.2] tracking-[0.5px] border border-[#6366F1] text-[#6366F1] rounded-md transition-colors hover:bg-[#6366F1] hover:text-white"
+                aria-label="Webライティング（5000字記事）の詳細を見る"
+              >
+                Explore →
+              </a>
+            </div>
+            <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden opacity-60 bg-[#6366F1]/10 flex items-center justify-center">
+              <span className="font-mono text-[12px] text-[#6366F1]/60">
+                Writing (5000)
+              </span>
+            </div>
+          </article>
         </div>
       </section>
 

@@ -275,10 +275,49 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Project Card 4 - New Writing Section (Placeholder) */}
+        {/* Project Card 4 - Sweets */}
         <section
           data-card
-          className="flex flex-col gap-8 px-0 pt-10 pb-32 border-t border-[#D97706] md:flex-row md:gap-16 md:items-center"
+          className="flex flex-col gap-8 px-0 pt-10 pb-12 border-t border-[#ab0782] md:flex-row md:gap-16 md:items-center"
+        >
+          {/* Text */}
+          <div data-text className="flex flex-col gap-5 md:flex-1">
+            <span className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] text-[#ab0782] uppercase">
+              Website
+            </span>
+            <h2 className="font-serif font-normal text-[28px] leading-[1.2] tracking-[-0.5px] text-[#ab0782] md:text-[32px] lg:text-[44px]">
+              秋の人気スイーツ特集
+            </h2>
+            <p className="font-serif font-light text-[16px] leading-[1.7] text-[#666] max-w-[400px]">
+              秋の季節感を活かしたスイーツ特集サイト。栗やかぼちゃを使った人気商品を紹介。
+            </p>
+            <a
+              href="/projects/sweets"
+              className="mt-4 w-fit px-5 py-2.5 font-mono text-[13px] leading-[1.2] tracking-[0.5px] bg-[#ab0782] text-white rounded-lg transition-all hover:bg-[#85065e] hover:shadow-lg"
+              aria-label="秋の人気スイーツ特集サイトの詳細を見る"
+            >
+              Explore →
+            </a>
+          </div>
+
+          {/* Image */}
+          <div
+            data-image
+            className="relative w-full aspect-[4/3] rounded-lg overflow-hidden md:flex-1 md:max-w-[500px]"
+          >
+            <Image
+              src="/Sweets_thumb.jpg"
+              alt="秋の人気スイーツ特集サイト"
+              fill
+              className="object-cover transition-transform duration-300 hover:scale-[1.03]"
+            />
+          </div>
+        </section>
+
+        {/* Project Card 5 - Web Writing (1000) */}
+        <section
+          data-card
+          className="flex flex-col gap-8 px-0 pt-10 pb-12 border-t border-[#D97706] md:flex-row md:gap-16 md:items-center"
         >
           {/* Text */}
           <div data-text className="flex flex-col gap-5 md:flex-1">
@@ -289,7 +328,7 @@ export default function Home() {
               Webライティング
             </h2>
             <p className="font-serif font-light text-[16px] leading-[1.7] text-[#666] max-w-[400px]">
-              SEOを意識した構成設計で、読みやすく行動につながる記事を制作。初心者向けから実務記事まで、要件に合わせて丁寧に整えます。
+              SEOを意識した構成設計で、読みやすく行動につながる記事を制作。家事時短の実践的なノウハウを1,000字で簡潔に提示。
             </p>
             <a
               href="/projects/web-writing"
@@ -307,6 +346,42 @@ export default function Home() {
           >
             <span className="font-mono text-[24px] text-[#D97706]/40">
               Writing
+            </span>
+          </div>
+        </section>
+
+        {/* Project Card 6 - Web Writing (5000) */}
+        <section
+          data-card
+          className="flex flex-col gap-8 px-0 pt-10 pb-32 border-t border-[#6366F1] md:flex-row md:gap-16 md:items-center"
+        >
+          {/* Text */}
+          <div data-text className="flex flex-col gap-5 md:flex-1">
+            <span className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] text-[#6366F1] uppercase">
+              Writing
+            </span>
+            <h2 className="font-serif font-normal text-[28px] leading-[1.2] tracking-[-0.5px] text-[#6366F1] md:text-[32px] lg:text-[44px]">
+              Webライティング
+            </h2>
+            <p className="font-serif font-light text-[16px] leading-[1.7] text-[#666] max-w-[400px]">
+              固定費見直しの順序設計を5,000字で詳細解説。出典明示・リスク管理・修正耐性を重視した納品品質を担保。
+            </p>
+            <a
+              href="/projects/writing-5000"
+              className="mt-4 w-fit px-5 py-2.5 font-mono text-[13px] leading-[1.2] tracking-[0.5px] bg-[#6366F1] text-white rounded-lg transition-all hover:bg-[#4F46E5] hover:shadow-lg"
+              aria-label="Webライティング（5000字記事）の詳細を見る"
+            >
+              Explore →
+            </a>
+          </div>
+
+          {/* Image */}
+          <div
+            data-image
+            className="relative w-full aspect-[4/3] rounded-lg overflow-hidden md:flex-1 md:max-w-[500px] bg-[#6366F1]/10 flex items-center justify-center"
+          >
+            <span className="font-mono text-[24px] text-[#6366F1]/40">
+              Writing (5000)
             </span>
           </div>
         </section>
