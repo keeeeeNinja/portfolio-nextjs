@@ -362,17 +362,17 @@ export default function Projects() {
         </div>
 
         {/* Related Projects Grid */}
-        <div className="flex flex-col gap-6 pb-32 md:flex-row md:gap-6">
+        <div className="flex flex-col gap-6 pb-32 md:flex-row md:flex-wrap md:gap-4 lg:flex-nowrap">
           {/* Current Project Card - More subtle */}
-          <article className="flex flex-col gap-4 pt-6 border-t border-[#ab0782]/30 md:flex-1">
+          <article className="flex flex-col gap-3 pt-6 border-t border-[#ab0782]/30 md:w-[calc(50%-8px)] lg:flex-1">
             <div className="flex flex-col gap-2 flex-1">
               <span className="font-mono text-[11px] tracking-[0.5px] text-[#ab0782]/60 uppercase">
                 Website
               </span>
-              <h3 className="font-serif font-normal text-[16px] leading-[1.3] tracking-[-0.3px] text-[#ab0782]/60 md:text-[18px]">
+              <h3 className="font-serif font-normal text-[14px] leading-[1.3] tracking-[-0.3px] text-[#ab0782]/60 md:text-[16px]">
                 秋の人気スイーツ特集
               </h3>
-              <span className="mt-auto font-mono text-[11px] tracking-[0.5px] text-[#999]">
+              <span className="mt-auto font-mono text-[10px] tracking-[0.5px] text-[#999]">
                 現在のページ
               </span>
             </div>
@@ -386,45 +386,69 @@ export default function Projects() {
             </div>
           </article>
 
-          {/* Project 02 - Last Diet */}
-          <article className="flex flex-col gap-4 pt-6 border-t border-[#6e660a] md:flex-1">
+          {/* Project 02 - Work Redesign */}
+          <article className="flex flex-col gap-3 pt-6 border-t border-[#0f766e] md:w-[calc(50%-8px)] lg:flex-1">
             <div className="flex flex-col gap-2 flex-1">
-              <span className="font-mono text-[11px] tracking-[0.5px] text-[#6e660a] uppercase">
-                Books
+              <span className="font-mono text-[11px] tracking-[0.5px] text-[#0f766e] uppercase">
+                SEO Writing & LP
               </span>
-              <h3 className="font-serif font-normal text-[16px] leading-[1.3] tracking-[-0.3px] text-[#6e660a] md:text-[18px]">
-                ラストダイエット
+              <h3 className="font-serif font-normal text-[14px] leading-[1.3] tracking-[-0.3px] text-[#0f766e] md:text-[16px]">
+                仕事のやり方再設計
               </h3>
               <a
-                href="/projects/last-diet"
-                className="mt-auto w-fit px-3 py-1.5 font-mono text-[11px] leading-[1.2] tracking-[0.5px] border border-[#6e660a] text-[#6e660a] rounded-md transition-colors hover:bg-[#6e660a] hover:text-white"
-                aria-label="Last Dietの詳細を見る"
+                href="/projects/work-redesign"
+                className="mt-auto w-fit px-2 py-1 font-mono text-[10px] leading-[1.2] tracking-[0.5px] border border-[#0f766e] text-[#0f766e] rounded-md transition-colors hover:bg-[#0f766e] hover:text-white"
+                aria-label="仕事のやり方再設計の詳細を見る"
               >
                 Explore →
               </a>
             </div>
             <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
               <Image
-                src="/last-diet-thumb2.jpg"
-                alt="Last Diet サムネイル"
+                src="/Working_LP2.webp"
+                alt="仕事のやり方再設計のサムネイル"
                 fill
                 className="object-cover"
               />
             </div>
           </article>
 
-          {/* Project 03 - Portfolio Site */}
-          <article className="flex flex-col gap-4 pt-6 border-t border-[#0034ad] md:flex-1">
+          {/* Project 03 - Web Writing */}
+          <article className="flex flex-col gap-3 pt-6 border-t border-[#D97706] md:w-[calc(50%-8px)] lg:flex-1">
+            <div className="flex flex-col gap-2 flex-1">
+              <span className="font-mono text-[11px] tracking-[0.5px] text-[#D97706] uppercase">
+                Writing
+              </span>
+              <h3 className="font-serif font-normal text-[14px] leading-[1.3] tracking-[-0.3px] text-[#D97706] md:text-[16px]">
+                Webライティング
+              </h3>
+              <a
+                href="/projects/web-writing"
+                className="mt-auto w-fit px-2 py-1 font-mono text-[10px] leading-[1.2] tracking-[0.5px] border border-[#D97706] text-[#D97706] rounded-md transition-colors hover:bg-[#D97706] hover:text-white"
+                aria-label="Webライティングの詳細を見る"
+              >
+                Explore →
+              </a>
+            </div>
+            <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-[#D97706]/10 flex items-center justify-center">
+              <span className="font-mono text-[12px] text-[#D97706]/60">
+                Writing
+              </span>
+            </div>
+          </article>
+
+          {/* Project 04 - Portfolio Site */}
+          <article className="flex flex-col gap-3 pt-6 border-t border-[#0034ad] md:w-[calc(50%-8px)] lg:flex-1">
             <div className="flex flex-col gap-2 flex-1">
               <span className="font-mono text-[11px] tracking-[0.5px] text-[#0034ad] uppercase">
                 Website
               </span>
-              <h3 className="font-serif font-normal text-[16px] leading-[1.3] tracking-[-0.3px] text-[#0034ad] md:text-[18px]">
+              <h3 className="font-serif font-normal text-[14px] leading-[1.3] tracking-[-0.3px] text-[#0034ad] md:text-[16px]">
                 ポートフォリオサイト
               </h3>
               <a
                 href="/projects/portfolio"
-                className="mt-auto w-fit px-3 py-1.5 font-mono text-[11px] leading-[1.2] tracking-[0.5px] border border-[#0034ad] text-[#0034ad] rounded-md transition-colors hover:bg-[#0034ad] hover:text-white"
+                className="mt-auto w-fit px-2 py-1 font-mono text-[10px] leading-[1.2] tracking-[0.5px] border border-[#0034ad] text-[#0034ad] rounded-md transition-colors hover:bg-[#0034ad] hover:text-white"
                 aria-label="ポートフォリオサイトの詳細を見る"
               >
                 Explore →
@@ -440,27 +464,27 @@ export default function Projects() {
             </div>
           </article>
 
-          {/* Project 04 - Work Redesign */}
-          <article className="flex flex-col gap-4 pt-6 border-t border-[#0f766e] md:flex-1">
+          {/* Project 05 - Last Diet */}
+          <article className="flex flex-col gap-3 pt-6 border-t border-[#6e660a] md:w-[calc(50%-8px)] lg:flex-1">
             <div className="flex flex-col gap-2 flex-1">
-              <span className="font-mono text-[11px] tracking-[0.5px] text-[#0f766e] uppercase">
-                SEO Writing & LP
+              <span className="font-mono text-[11px] tracking-[0.5px] text-[#6e660a] uppercase">
+                Books
               </span>
-              <h3 className="font-serif font-normal text-[16px] leading-[1.3] tracking-[-0.3px] text-[#0f766e] md:text-[18px]">
-                仕事のやり方再設計
+              <h3 className="font-serif font-normal text-[14px] leading-[1.3] tracking-[-0.3px] text-[#6e660a] md:text-[16px]">
+                ラストダイエット
               </h3>
               <a
-                href="/projects/work-redesign"
-                className="mt-auto w-fit px-3 py-1.5 font-mono text-[11px] leading-[1.2] tracking-[0.5px] border border-[#0f766e] text-[#0f766e] rounded-md transition-colors hover:bg-[#0f766e] hover:text-white"
-                aria-label="仕事のやり方再設計の詳細を見る"
+                href="/projects/last-diet"
+                className="mt-auto w-fit px-2 py-1 font-mono text-[10px] leading-[1.2] tracking-[0.5px] border border-[#6e660a] text-[#6e660a] rounded-md transition-colors hover:bg-[#6e660a] hover:text-white"
+                aria-label="Last Dietの詳細を見る"
               >
                 Explore →
               </a>
             </div>
             <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
               <Image
-                src="/Working_LP2.webp"
-                alt="仕事のやり方再設計のサムネイル"
+                src="/last-diet-thumb2.jpg"
+                alt="Last Diet サムネイル"
                 fill
                 className="object-cover"
               />

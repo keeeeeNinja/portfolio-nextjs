@@ -239,7 +239,7 @@ export default function Home() {
         {/* Project Card 3 - Last Diet */}
         <section
           data-card
-          className="flex flex-col gap-8 px-0 pt-10 pb-32 border-t border-[#6e660a] md:flex-row md:gap-16 md:items-center"
+          className="flex flex-col gap-8 px-0 pt-10 pb-12 border-t border-[#6e660a] md:flex-row md:gap-16 md:items-center"
         >
           {/* Text */}
           <div data-text className="flex flex-col gap-5 md:flex-1">
@@ -272,6 +272,42 @@ export default function Home() {
               fill
               className="object-cover transition-transform duration-300 hover:scale-[1.03]"
             />
+          </div>
+        </section>
+
+        {/* Project Card 4 - New Writing Section (Placeholder) */}
+        <section
+          data-card
+          className="flex flex-col gap-8 px-0 pt-10 pb-32 border-t border-[#D97706] md:flex-row md:gap-16 md:items-center"
+        >
+          {/* Text */}
+          <div data-text className="flex flex-col gap-5 md:flex-1">
+            <span className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] text-[#D97706] uppercase">
+              Writing
+            </span>
+            <h2 className="font-serif font-normal text-[28px] leading-[1.2] tracking-[-0.5px] text-[#D97706] md:text-[32px] lg:text-[44px]">
+              Webライティング
+            </h2>
+            <p className="font-serif font-light text-[16px] leading-[1.7] text-[#666] max-w-[400px]">
+              SEOを意識した構成設計で、読みやすく行動につながる記事を制作。初心者向けから実務記事まで、要件に合わせて丁寧に整えます。
+            </p>
+            <a
+              href="/projects/web-writing"
+              className="mt-4 w-fit px-5 py-2.5 font-mono text-[13px] leading-[1.2] tracking-[0.5px] bg-[#D97706] text-white rounded-lg transition-all hover:bg-[#B45309] hover:shadow-lg"
+              aria-label="Webライティングの詳細を見る"
+            >
+              Explore →
+            </a>
+          </div>
+
+          {/* Image */}
+          <div
+            data-image
+            className="relative w-full aspect-[4/3] rounded-lg overflow-hidden md:flex-1 md:max-w-[500px] bg-[#D97706]/10 flex items-center justify-center"
+          >
+            <span className="font-mono text-[24px] text-[#D97706]/40">
+              Writing
+            </span>
           </div>
         </section>
       </div>
