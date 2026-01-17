@@ -350,7 +350,43 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Project Card 6 - Web Writing (5000) */}
+        {/* Project Card 6 - Web Writing (3000) */}
+        <section
+          data-card
+          className="flex flex-col gap-8 px-0 pt-10 pb-12 border-t border-[#E11D48] md:flex-row md:gap-16 md:items-center"
+        >
+          {/* Text */}
+          <div data-text className="flex flex-col gap-5 md:flex-1">
+            <span className="font-mono font-medium text-[12px] leading-[1.2] tracking-[0.5px] text-[#E11D48] uppercase">
+              Writing
+            </span>
+            <h2 className="font-serif font-normal text-[28px] leading-[1.2] tracking-[-0.5px] text-[#E11D48] md:text-[32px] lg:text-[44px]">
+              Webライティング
+            </h2>
+            <p className="font-serif font-light text-[16px] leading-[1.7] text-[#666] max-w-[400px]">
+              3,000字の記事。（説明文を後で更新）
+            </p>
+            <a
+              href="/projects/writing-3000"
+              className="mt-4 w-fit px-5 py-2.5 font-mono text-[13px] leading-[1.2] tracking-[0.5px] bg-[#E11D48] text-white rounded-lg transition-all hover:bg-[#BE123C] hover:shadow-lg"
+              aria-label="Webライティング（3000字記事）の詳細を見る"
+            >
+              Explore →
+            </a>
+          </div>
+
+          {/* Image */}
+          <div
+            data-image
+            className="relative w-full aspect-[4/3] rounded-lg overflow-hidden md:flex-1 md:max-w-[500px] bg-[#E11D48]/10 flex items-center justify-center"
+          >
+            <span className="font-mono text-[24px] text-[#E11D48]/40">
+              Writing (3000)
+            </span>
+          </div>
+        </section>
+
+        {/* Project Card 7 - Web Writing (5000) */}
         <section
           data-card
           className="flex flex-col gap-8 px-0 pt-10 pb-32 border-t border-[#6366F1] md:flex-row md:gap-16 md:items-center"
