@@ -20,6 +20,7 @@ export default function Writing3000Project() {
   const messageRef = useRef<HTMLElement>(null);
   const relatedRef = useRef<HTMLElement>(null);
 
+
   useEffect(() => {
     if (prefersReducedMotion()) return;
 
@@ -322,6 +323,9 @@ export default function Writing3000Project() {
                     <p className="font-serif font-light text-[16px] leading-[1.8] text-[#444] mb-4 md:text-[18px]">
                       {children}
                     </p>
+                  ),
+                  li: ({ children }) => (
+                    <li className="text-[#444]">{children}</li>
                   ),
                 }}
               >

@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef, type ReactNode } from "react";
+import ReactMarkdown from "react-markdown";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import {
@@ -16,6 +17,47 @@ export default function Home() {
   const heroRef = useRef<HTMLElement>(null);
   const labelRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<HTMLDivElement>(null);
+  const writingPreviewComponents = useMemo(
+    () => ({
+      h1: ({ children }: { children: ReactNode }) => (
+        <h3 className="font-serif font-normal text-[20px] leading-[1.3] tracking-[-0.3px] text-[#111] mb-2">
+          {children}
+        </h3>
+      ),
+      h2: ({ children }: { children: ReactNode }) => (
+        <h4 className="font-serif font-normal text-[16px] leading-[1.4] tracking-[-0.2px] text-[#333] mt-4">
+          {children}
+        </h4>
+      ),
+      p: ({ children }: { children: ReactNode }) => (
+        <p className="font-serif font-light text-[14px] leading-[1.7] text-[#444]">
+          {children}
+        </p>
+      ),
+    }),
+    []
+  );
+  const writingPreview1000 = `# 洗濯の時短は「干す・畳む」削減が鉄則【平日10分短縮のコツ】
+
+「洗濯が終わらない…」帰宅後に山積みの洗濯物を見て、ため息をついたことはありませんか？
+
+## 洗濯時短の本質は「手作業時間」の削減
+
+洗濯で本当に時間を食うのは何でしょうか？洗濯機がまわる40分間ではありません。実は「干す」「畳む」の手作業です。`;
+  const writingPreview3000 = `# 国内旅行の準備で不安を減らすガイド｜持ち物・移動・トラブル対策
+
+国内旅行は気軽に見えても、持ち物や移動、トラブル対応が頭に浮かぶと不安が膨らみます。
+
+## 不安を減らす全体像：3つの備えと判断基準
+
+不安は、何が正解か分からないときに膨らみやすいものです。Myth（思い込み）とReality（現実）を分けて考えると、基準が明確になります。`;
+  const writingPreview5000 = `# 固定費の見直しは「通信費→保険→サブスク」の順番で始めよう【初心者でも挫折しない節約術】
+
+「固定費を見直したいけど、何から手を付ければいいの？」そう悩んでいませんか。
+
+## 固定費の見直しは「順番」が9割【なぜ通信費→保険→サブスクなのか】
+
+節約を始めようとして、まず食費やコンビニ代から削ろうとしていませんか。実はそれ、挫折への第一歩なんです。`;
 
   useEffect(() => {
     if (prefersReducedMotion()) return;
@@ -342,11 +384,13 @@ export default function Home() {
           {/* Image */}
           <div
             data-image
-            className="relative w-full aspect-[4/3] rounded-lg overflow-hidden md:flex-1 md:max-w-[500px] bg-[#D97706]/10 flex items-center justify-center"
+            className="relative w-full aspect-[4/3] rounded-lg overflow-hidden md:flex-1 md:max-w-[500px] bg-[#D97706]/10 p-6"
           >
-            <span className="font-mono text-[24px] text-[#D97706]/40">
-              Writing
-            </span>
+            <div className="h-full overflow-hidden flex flex-col items-start justify-center w-full text-left gap-4">
+              <ReactMarkdown components={writingPreviewComponents}>
+                {writingPreview1000}
+              </ReactMarkdown>
+            </div>
           </div>
         </section>
 
@@ -378,11 +422,13 @@ export default function Home() {
           {/* Image */}
           <div
             data-image
-            className="relative w-full aspect-[4/3] rounded-lg overflow-hidden md:flex-1 md:max-w-[500px] bg-[#E11D48]/10 flex items-center justify-center"
+            className="relative w-full aspect-[4/3] rounded-lg overflow-hidden md:flex-1 md:max-w-[500px] bg-[#E11D48]/10 p-6"
           >
-            <span className="font-mono text-[24px] text-[#E11D48]/40">
-              Writing (3000)
-            </span>
+            <div className="h-full overflow-hidden flex flex-col items-start justify-center w-full text-left gap-4">
+              <ReactMarkdown components={writingPreviewComponents}>
+                {writingPreview3000}
+              </ReactMarkdown>
+            </div>
           </div>
         </section>
 
@@ -414,11 +460,13 @@ export default function Home() {
           {/* Image */}
           <div
             data-image
-            className="relative w-full aspect-[4/3] rounded-lg overflow-hidden md:flex-1 md:max-w-[500px] bg-[#6366F1]/10 flex items-center justify-center"
+            className="relative w-full aspect-[4/3] rounded-lg overflow-hidden md:flex-1 md:max-w-[500px] bg-[#6366F1]/10 p-6"
           >
-            <span className="font-mono text-[24px] text-[#6366F1]/40">
-              Writing (5000)
-            </span>
+            <div className="h-full overflow-hidden flex flex-col items-start justify-center w-full text-left gap-4">
+              <ReactMarkdown components={writingPreviewComponents}>
+                {writingPreview5000}
+              </ReactMarkdown>
+            </div>
           </div>
         </section>
       </div>
